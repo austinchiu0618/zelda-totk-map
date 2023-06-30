@@ -1,5 +1,6 @@
 import L from 'leaflet'
 import { MapContainer, TileLayer, Marker } from 'react-leaflet'
+import axios from 'axios'
 // import icon from '@/constants/icon'
 // Style
 import '@/styles/style.css'
@@ -12,7 +13,7 @@ import type { LayoutType } from '@/types'
 
 const mapStyle = { backgroundColor: '#000' }
 
-// Set def value
+// Set init value
 const lat = 117.2 // Lat 緯度
 const lng = 140.63 // Lng 經度
 const ratio = 3 / 256
@@ -26,6 +27,10 @@ const zeldaCRS = L.extend(
   L.CRS.Simple,
   { transformation: new L.Transformation(ratio, (lng / 2), -ratio, (lat / 2)) }
 )
+
+axios.get('./src/assets/markers/groundtiles/locations.json').then(async (res) => {
+  console.log(await res.data)
+})
 
 export default function Map() {
   // Init Map
@@ -51,7 +56,7 @@ export default function Map() {
       maxZoom={8}
       maxBounds={bounds}
     >
-      <TileControl />
+
       <TileLayer
         bounds={bounds}
         noWrap
@@ -68,6 +73,12 @@ export default function Map() {
           />
         </div>
       </div>
+
+      {/* 右上 */}
+      {/* <div className="leaflet-top leaflet-right">
+        <div className="leaflet-control flex flex-col gap-y-2.5" />
+      </div> */}
+      <TileControl />
     </MapContainer>
   )
 }

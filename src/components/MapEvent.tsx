@@ -7,8 +7,8 @@ type MapEventProps = {
 export default function MapEvent(props: MapEventProps) {
   const { setZoom } = props
   const [searchParams, setSearchParams] = useSearchParams()
-
   const map = useMap()
+
   useMapEvents({
     moveend: () => {
       setZoom(map.getZoom())

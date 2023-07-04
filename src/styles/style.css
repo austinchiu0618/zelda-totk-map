@@ -7,6 +7,10 @@
   height: 100vh;
 }
 
+.icon-button { 
+  @apply h-12 w-12 p-2 cursor-pointer hover:bg-white/30
+}
+
 /* leaflet */
 
 .leaflet-div-icon {

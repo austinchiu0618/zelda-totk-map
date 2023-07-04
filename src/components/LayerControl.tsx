@@ -2,9 +2,9 @@ import icon from '@/constants/icon'
 import type { LayoutType } from '@/types'
 
 type LayerControlProps = {
-  layout: LayoutType,
-  setLayout: React.Dispatch<React.SetStateAction<LayoutType>>
-}
+  layout: LayoutType;
+  setLayout: React.Dispatch<React.SetStateAction<LayoutType>>;
+};
 
 export default function LayerControl(props: LayerControlProps) {
   const { layout, setLayout } = props
@@ -20,14 +20,14 @@ export default function LayerControl(props: LayerControlProps) {
   }, [layout])
 
   return (
-    <div className="flex flex-col gap-y-2.5 bg-black/50 p-1">
+    <div className="flex flex-col items-center gap-y-2">
       {/* sky */}
       <div
-        className="cursor-pointer"
+        className="icon-button"
         onClick={() => setLayout('sky')}
       >
         <img
-          className="w-8 h-8"
+          className="object-cover"
           ref={skyRef}
           alt="skyIcon"
         />
@@ -35,11 +35,11 @@ export default function LayerControl(props: LayerControlProps) {
 
       {/* surface */}
       <div
-        className="cursor-pointer"
+        className="icon-button"
         onClick={() => setLayout('surface')}
       >
         <img
-          className="w-8 h-8"
+          className="object-cover"
           ref={surfaceRef}
           alt="surfaceIcon"
         />
@@ -47,11 +47,11 @@ export default function LayerControl(props: LayerControlProps) {
 
       {/* depths */}
       <div
-        className="cursor-pointer"
+        className="icon-button"
         onClick={() => setLayout('depths')}
       >
         <img
-          className="w-8 h-8"
+          className="object-cover"
           ref={depthsRef}
           alt="depthsIcon"
         />

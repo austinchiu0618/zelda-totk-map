@@ -1,1 +1,1 @@
-export type LayoutType = 'skytiles' | 'groundtiles' | 'undergroundtiles'
+export type LayoutType = 'sky' | 'surface' | 'depths'

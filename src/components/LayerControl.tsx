@@ -2,7 +2,7 @@ import icon from '@/constants/icon'
 import type { LayoutType } from '@/types'
 
 type LayerControlProps = {
-  layout: string,
+  layout: LayoutType,
   setLayout: React.Dispatch<React.SetStateAction<LayoutType>>
 }
 
@@ -10,21 +10,21 @@ export default function LayerControl(props: LayerControlProps) {
   const { layout, setLayout } = props
 
   const skyRef = useRef<HTMLImageElement>({} as HTMLImageElement)
-  const groundRef = useRef<HTMLImageElement>({} as HTMLImageElement)
-  const undergroundRef = useRef<HTMLImageElement>({} as HTMLImageElement)
+  const surfaceRef = useRef<HTMLImageElement>({} as HTMLImageElement)
+  const depthsRef = useRef<HTMLImageElement>({} as HTMLImageElement)
 
   useEffect(() => {
-    skyRef.current.src = layout === 'skytiles' ? icon.skySelected : icon.sky
-    groundRef.current.src = layout === 'groundtiles' ? icon.surfaceSelected : icon.surface
-    undergroundRef.current.src = layout === 'undergroundtiles' ? icon.depthsSelected : icon.depths
+    skyRef.current.src = layout === 'sky' ? icon.skySelected : icon.sky
+    surfaceRef.current.src = layout === 'surface' ? icon.surfaceSelected : icon.surface
+    depthsRef.current.src = layout === 'depths' ? icon.depthsSelected : icon.depths
   }, [layout])
 
   return (
     <div className="flex flex-col gap-y-2.5 bg-black/50 p-1">
-      {/* skytiles */}
+      {/* sky */}
       <div
         className="cursor-pointer"
-        onClick={() => setLayout('skytiles')}
+        onClick={() => setLayout('sky')}
       >
         <img
           className="w-8 h-8"
@@ -33,26 +33,26 @@ export default function LayerControl(props: LayerControlProps) {
         />
       </div>
 
-      {/* groundtiles */}
+      {/* surface */}
       <div
         className="cursor-pointer"
-        onClick={() => setLayout('groundtiles')}
+        onClick={() => setLayout('surface')}
       >
         <img
           className="w-8 h-8"
-          ref={groundRef}
+          ref={surfaceRef}
           alt="surfaceIcon"
         />
       </div>
 
-      {/* undergroundtiles */}
+      {/* depths */}
       <div
         className="cursor-pointer"
-        onClick={() => setLayout('undergroundtiles')}
+        onClick={() => setLayout('depths')}
       >
         <img
           className="w-8 h-8"
-          ref={undergroundRef}
+          ref={depthsRef}
           alt="depthsIcon"
         />
       </div>

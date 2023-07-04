@@ -22,5 +22,9 @@ export default defineConfig({
     alias: {
       '@': resolve(__dirname, 'src')
     }
+  },
+  server: {
+    host: 'localhost',
+    port: 3001
   }
 })

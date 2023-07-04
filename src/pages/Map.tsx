@@ -1,17 +1,19 @@
 import L from 'leaflet'
-import { MapContainer, TileLayer, Marker } from 'react-leaflet'
-import axios from 'axios'
-// import icon from '@/constants/icon'
+import { MapContainer, TileLayer } from 'react-leaflet'
+
 // Style
 import '@/styles/style.css'
 import 'leaflet/dist/leaflet.css'
+
 // component
+import MapEvent from '@/components/MapEvent'
 import LayerControl from '@/components/LayerControl'
-import TileControl from '@/components/TileControl'
+import PlaceNameMarks from '@/components/PlaceNameMarks'
+
 // type
 import type { LayoutType } from '@/types'
 
-const mapStyle = { backgroundColor: '#000' }
+const mapStyle = { backgroundColor: '#202b2d' }
 
 // Set init value
 const lat = 117.2 // Lat 緯度
@@ -20,7 +22,7 @@ const ratio = 3 / 256
 const southWest = new L.LatLng((lat / 2) / ratio, (lng / 2) / ratio)
 const northEast = new L.LatLng(-(lat / 2) / ratio, -(lng / 2) / ratio)
 const bounds = new L.LatLngBounds(southWest, northEast)
-const url = 'https://raw.githubusercontent.com/Slluxx/TOTK-Interactive-Map/tiles/assets/tiles'
+const tileUrl = 'https://raw.githubusercontent.com/Slluxx/TOTK-Interactive-Map/tiles/assets/tiles'
 
 const zeldaCRS = L.extend(
   {},
@@ -28,21 +30,26 @@ const zeldaCRS = L.extend(
   { transformation: new L.Transformation(ratio, (lng / 2), -ratio, (lat / 2)) }
 )
 
-axios.get('./src/assets/markers/groundtiles/locations.json').then(async (res) => {
-  console.log(await res.data)
-})
+const myUrl = new URL(window.location.href)
+const z = myUrl.searchParams.has('z') ? Number(myUrl.searchParams.get('z')) : 4
+const x = myUrl.searchParams.has('x') ? Number(myUrl.searchParams.get('x')) : 0
+const y = myUrl.searchParams.has('y') ? Number(myUrl.searchParams.get('y')) : 0
 
 export default function Map() {
-  // Init Map
-  const center = new L.LatLng(0, 0)
-  const [zoom, setZoom] = useState(4)
-  const [layout, setLayout] = useState<LayoutType>('groundtiles')
+  const [searchParams, setSearchParams] = useSearchParams()
 
-  // const [searchParams, setSearchParams] = useSearchParams()
-  // useEffect(() => {
-  //   setSearchParams({ zoom: '4', x: '-1907.83105', y: '-889.487976' })
-  //   console.log(searchParams)
-  // }, [])
+  // Init Map
+  const center = new L.LatLng(x, y)
+  const [zoom, setZoom] = useState(z)
+  const [layout, setLayout] = useState<LayoutType>('surface')
+
+  useEffect(() => {
+    // console.log('useEffect')
+    setSearchParams({
+      z: `${z}`, x: `${x}`, y: `${y}`
+    })
+  }, [])
+
   return (
     <MapContainer
       id="map"
@@ -56,13 +63,14 @@ export default function Map() {
       maxZoom={8}
       maxBounds={bounds}
     >
-
       <TileLayer
         bounds={bounds}
         noWrap
         tms
-        url={`${url}/${layout}/{z}/{x}/{y}.png`}
+        url={`src/assets/tiles/${layout}/{z}/{x}/{y}.png`}
       />
+
+      <MapEvent setZoom={setZoom} />
 
       {/* 左上 */}
       <div className="leaflet-top leaflet-left">
@@ -78,7 +86,12 @@ export default function Map() {
       {/* <div className="leaflet-top leaflet-right">
         <div className="leaflet-control flex flex-col gap-y-2.5" />
       </div> */}
-      <TileControl />
+
+      <PlaceNameMarks
+        zoom={zoom}
+        layout={layout}
+      />
+
     </MapContainer>
   )
 }

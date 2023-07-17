@@ -1,11 +1,11 @@
 import * as React from 'react'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Map from '@/pages/Map'
+import Home from '@/pages/Home'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Map />
+    element: <Home />
   }
 ])
 

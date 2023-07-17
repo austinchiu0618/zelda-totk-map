@@ -4,11 +4,23 @@
 
 #map {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 48px);
 }
 
 .icon-button { 
-  @apply h-12 w-12 p-2 cursor-pointer hover:bg-white/30
+  @apply h-14 w-14 p-2 cursor-pointer hover:bg-white/30
+}
+
+
+.title {
+  background: linear-gradient(270deg,#60b7c7,#227483);
+  text-shadow: -1px 0 #227483, 0 1px #227483, 1px 0 #227483, 0 -1px #227483;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.zelda-bg {
+  background-image: url('../assets/bg.png');
+  /* background-size: 140%; */
 }
 
 /* leaflet */
@@ -21,7 +33,7 @@
   width: revert !important;
 }
 
-.leaflet-div-icon .locationName{
+.leaflet-div-icon .locationName {
   position: absolute;
   transform: translate(-50%, -50%);
   font-size: 19px !important;
@@ -29,3 +41,4 @@
   text-shadow: -2px 0 #91793e, 0 2px #91793e, 2px 0 #91793e, 0 -2px #91793e;
   white-space: nowrap; 
 }
+

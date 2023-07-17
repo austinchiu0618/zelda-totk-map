@@ -63,15 +63,17 @@ export default function Map() {
       maxZoom={8}
       maxBounds={bounds}
     >
-
       {/* 事件控制 */}
       <MapEvent setZoom={setZoom} />
 
       {/* 控制面板 */}
-      <div className="leaflet-top leaflet-left">
-        <div
-          className="leaflet-control !m-0 flex h-screen flex-col justify-center gap-y-10 bg-black/80"
-        >
+      <div
+        onDoubleClickCapture={(e) => {
+          e.stopPropagation()
+        }}
+        className="leaflet-top leaflet-left"
+      >
+        <div className="leaflet-control zelda-bg bg-[length:140%] !m-0 flex h-screen flex-col justify-center gap-y-10">
           <FilterContorl />
           <LayerControl
             setLayout={setLayout}

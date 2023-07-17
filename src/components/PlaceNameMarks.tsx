@@ -1,5 +1,6 @@
 import L from 'leaflet'
 import { Marker } from 'react-leaflet'
+import { useTranslation } from 'react-i18next'
 import skyPlaceName from '@/assets/markers/sky/placeName.json'
 import surfacePlaceName from '@/assets/markers/surface/placeName.json'
 import depthsPlaceName from '@/assets/markers/depths/placeName.json'
@@ -22,6 +23,8 @@ export default function LocationControl(props: LocationMarksProps) {
   const { zoom, layout } = props
   const [markerDate, setMarkerDate] = useState(surfacePlaceName.layers)
   const [list, setList] = useState<MarkerType[]>([])
+
+  const { t } = useTranslation(['common', 'totk'])
 
   useEffect(() => {
     const newMarkers = markerDate.map((elm) => {
@@ -56,7 +59,7 @@ export default function LocationControl(props: LocationMarksProps) {
         <Marker
           key={elm.id}
           position={[elm.coords[0], elm.coords[1]]}
-          icon={L.divIcon({ html: `<div class="locationName">${elm.name}</div>` })}
+          icon={L.divIcon({ html: `<div class="locationName">${t(elm.name, { ns: 'totk' })}</div>` })}
         />
       ))}
     </div>

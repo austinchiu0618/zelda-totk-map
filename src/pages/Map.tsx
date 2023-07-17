@@ -1,6 +1,6 @@
 import L from 'leaflet'
 import { MapContainer, TileLayer } from 'react-leaflet'
-
+import { useTranslation } from 'react-i18next'
 // Style
 import '@/styles/style.css'
 import 'leaflet/dist/leaflet.css'

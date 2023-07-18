@@ -35,6 +35,7 @@ module.exports = {
     'no-unused-vars': 'warn',
     'no-console': 'off',
     'object-curly-newline': ['error', { ImportDeclaration: 'never' }],
+    'max-len': 'off',
 
     'import/first': 'off',
     'import/named': 'error',

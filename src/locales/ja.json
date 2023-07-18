@@ -59,7 +59,7 @@
     "link-/zelda/totk/armor": "防具・服の装備一覧と入手方法",
     "common-json-anchor": ""
   },
-  "totk":{
+  "totk": {
     "meta-title": "【ティアキン】マップ（ハイラル全域地図）｜ゼルダの伝説ティアーズオブザキングダム",
     "meta-description": "ティアキン（ゼルダの伝説ティアーズオブザキングダム）のマップです。鳥望台、祠、破魔の根、コログのミ、ブロックゴーレム、イワロック、ヒノックス、ライネル、グリオーク、デグガーマ、龍の泪、ゾナウギア製造機、大妖精の泉、深穴、洞窟、井戸、女神像、料理鍋、看板",
     "Hyrule Castle": "ハイラル城",
@@ -491,6 +491,7 @@
     "East Akkala Stable Well": "ヒガッカレ馬宿の井戸",
     "Haran Lakefront Well": "ハラヤ池ほとりの井戸",
     "Tabantha Bridge Stable Well": "タバンタ大橋馬宿の井戸",
+    "Great Fairy": "大妖精の泉",
     "Great Fairy Fountain": "大妖精の泉",
     "Malanya Spring": "マーロンの泉",
     "Korok Seed": "コログのミ",
@@ -1764,6 +1765,7 @@
     "Other": "他の",
     "Bosses": "ボス",
     "Cherry Tree": "桜",
+    "Minigames": "ミニゲーム",
     "bubbulfrogX": "マヨイ",
     "bubbulfrogItemX": "マヨイの落とし物",
     "// 介面文字": "",

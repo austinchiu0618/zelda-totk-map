@@ -1,57 +1,34 @@
 import L from 'leaflet'
 import { Marker } from 'react-leaflet'
-import { useTranslation } from 'react-i18next'
-import skyPlaceName from '@/assets/markers/sky/placeName.json'
-import surfacePlaceName from '@/assets/markers/surface/placeName.json'
-import depthsPlaceName from '@/assets/markers/depths/placeName.json'
-import type { LayoutType } from '@/types'
+import placeNameJson from '@/assets/markers/placeName.json'
+import type { LayoutType, MarkerType, LayerType } from '@/types'
 
 type LocationMarksProps = {
   zoom: number,
   layout: LayoutType
 }
 
-type MarkerType = {
-  coords: number[];
-  elv: number;
-  id: string;
-  name: string;
-  link: string;
-}
+type PlaceNameJson = {[key in LayoutType]: {
+  name: string,
+  layers: Pick<LayerType, 'markers'|'maxZoom'|'minZoom'>[]
+}}
 
-export default function LocationControl(props: LocationMarksProps) {
+const placeName:PlaceNameJson = placeNameJson
+
+export default function PlaceNameMarks(props: LocationMarksProps) {
   const { zoom, layout } = props
-  const [markerDate, setMarkerDate] = useState(surfacePlaceName.layers)
   const [list, setList] = useState<MarkerType[]>([])
 
-  const { t } = useTranslation(['common', 'totk'])
+  const { t } = useTranslation()
 
   useEffect(() => {
-    const newMarkers = markerDate.map((elm) => {
-      const condition = (elm.maxZoom ?? 6) >= zoom - 2 && zoom - 2 >= elm.minZoom
-      if (condition) {
-        return elm.markers
-      }
+    const newMarkers = placeName[layout].layers.map((elm) => {
+      const condition = (elm.maxZoom ?? 6) >= zoom - 2 && zoom - 2 >= (elm.minZoom ?? 0)
+      if (condition) return elm.markers
       return []
     })
     setList(newMarkers.flat())
-  }, [zoom, markerDate])
-
-  useEffect(() => {
-    switch (layout) {
-      case 'sky':
-        setMarkerDate(skyPlaceName.layers)
-        break
-      case 'surface':
-        setMarkerDate(surfacePlaceName.layers)
-        break
-      case 'depths':
-        setMarkerDate(depthsPlaceName.layers)
-        break
-      default:
-        break
-    }
-  }, [layout])
+  }, [zoom, layout])
 
   return (
     <div>
@@ -59,7 +36,7 @@ export default function LocationControl(props: LocationMarksProps) {
         <Marker
           key={elm.id}
           position={[elm.coords[0], elm.coords[1]]}
-          icon={L.divIcon({ html: `<div class="locationName">${t(elm.name, { ns: 'totk' })}</div>` })}
+          icon={L.divIcon({ html: `<div class="locationName">${t(elm.name ?? '', { ns: 'totk' })}</div>` })}
         />
       ))}
     </div>

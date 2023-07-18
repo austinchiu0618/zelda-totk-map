@@ -1,0 +1,225 @@
+[
+  {
+    "name": "Travel Gate",
+    "items": [
+      {
+        "name": "Skyview Tower",
+        "icon": ""
+      },
+      {
+        "name": "Shrine of Light",
+        "icon": "shrine.png"
+      },
+      {
+        "name": "Lightroot",
+        "icon": ""
+      },
+      {
+        "name": "Tech Lab",
+        "icon": ""
+      },
+      {
+        "name": "Dungeon",
+        "icon": ""
+      },
+      {
+        "name": "Other Travel Gates",
+        "icon": ""
+      }
+    ]
+  },
+  {
+    "name": "Quests",
+    "items": [
+      {
+        "name": "Main Quest",
+        "icon": ""
+      },
+      {
+        "name": "Quest Objective",
+        "icon": ""
+      },
+      {
+        "name": "Side Adventure",
+        "icon": ""
+      },
+      {
+        "name": "Dragon's Tear",
+        "icon": ""
+      },
+      {
+        "name": "Shrine Quest",
+        "icon": ""
+      },
+      {
+        "name": "Zonai Relief",
+        "icon": ""
+      },
+      {
+        "name": "Side Quest",
+        "icon": ""
+      }
+    ]
+  },
+  {
+    "name": "Collectibles",
+    "items": [
+      {
+        "name": "Korok Seed",
+        "icon": ""
+      },
+      {
+        "name": "Armor",
+        "icon": ""
+      },
+      {
+        "name": "Treasure Chest",
+        "icon": ""
+      },
+      {
+        "name": "Unique Weapon",
+        "icon": ""
+      },
+      {
+        "name": "Sage's Will",
+        "icon": ""
+      },
+      {
+        "name": "Yiga Schematic",
+        "icon": ""
+      },
+      {
+        "name": "Old Map",
+        "icon": ""
+      }
+    ]
+  },
+  {
+    "name": "Locations",
+    "items": [
+      {
+        "name": "Village",
+        "icon": ""
+      },
+      {
+        "name": "Cave",
+        "icon": ""
+      },
+      {
+        "name": "Chasm",
+        "icon": ""
+      },
+      {
+        "name": "Well",
+        "icon": ""
+      }
+    ]
+  },
+  {
+    "name": "Services",
+    "items": [
+      {
+        "name": "Stable",
+        "icon": ""
+      },
+      {
+        "name": "Other Shops",
+        "icon": ""
+      },
+      {
+        "name": "Inn",
+        "icon": ""
+      },
+      {
+        "name": "Great Fairy",
+        "icon": ""
+      },
+      {
+        "name": "General Store",
+        "icon": ""
+      },
+      {
+        "name": "Device Dispenser",
+        "icon": ""
+      },
+      {
+        "name": "Armor Shop",
+        "icon": ""
+      },
+      {
+        "name": "Goddess Statue",
+        "icon": ""
+      },
+      {
+        "name": "Bargainer Statue",
+        "icon": ""
+      },
+      {
+        "name": "Cooking Pot",
+        "icon": ""
+      },
+      {
+        "name": "Koltin",
+        "icon": ""
+      }
+    ]
+  },
+  {
+    "name": "Other",
+    "items": [
+      {
+        "name": "Hudson Sign",
+        "icon": ""
+      },
+      {
+        "name": "Cherry Tree",
+        "icon": ""
+      },
+      {
+        "name": "Minigames",
+        "icon": ""
+      }
+    ]
+  },
+  {
+    "name": "Bosses",
+    "items": [
+      {
+        "name": "Flux Construct",
+        "icon": ""
+      },
+      {
+        "name": "Lynel",
+        "icon": ""
+      },
+      {
+        "name": "Hinox",
+        "icon": ""
+      },
+      {
+        "name": "Molduga",
+        "icon": ""
+      },
+      {
+        "name": "Stone Talus",
+        "icon": ""
+      },
+      {
+        "name": "Gloom Spawn",
+        "icon": ""
+      },
+      {
+        "name": "Frox",
+        "icon": ""
+      },
+      {
+        "name": "Dungeon Boss",
+        "icon": ""
+      },
+      {
+        "name": "Gleeok",
+        "icon": ""
+      }
+    ]
+  }
+]

@@ -1,11 +1,13 @@
 import { useMapEvents, useMap } from 'react-leaflet'
+import { LayoutType } from '@/types'
 
 type MapEventProps = {
+  layout: LayoutType
   setZoom: React.Dispatch<React.SetStateAction<number>>
 }
 
 export default function MapEvent(props: MapEventProps) {
-  const { setZoom } = props
+  const { layout, setZoom } = props
   const [searchParams, setSearchParams] = useSearchParams()
   const map = useMap()
 
@@ -13,9 +15,10 @@ export default function MapEvent(props: MapEventProps) {
     moveend: () => {
       setZoom(map.getZoom())
       setSearchParams({
-        z: `${map.getZoom()}`,
         x: `${Math.trunc(map.getCenter().lat)}`,
-        y: `${Math.trunc(map.getCenter().lng)}`
+        y: `${Math.trunc(map.getCenter().lng)}`,
+        z: `${map.getZoom()}`,
+        i: layout
       })
     }
   })

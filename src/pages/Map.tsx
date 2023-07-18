@@ -11,10 +11,9 @@ import FilterContorl from '@/components/FilterContorl'
 import LayerControl from '@/components/LayerControl'
 import ZoomControl from '@/components/ZoomContorl'
 import PlaceNameMarks from '@/components/PlaceNameMarks'
+import SkyMarks from '@/components/SkyMarks'
 // type
 import type { LayoutType } from '@/types'
-
-const mapStyle = { backgroundColor: '#202b2d' }
 
 // Set init value
 const lat = 117.2 // Lat 緯度
@@ -33,38 +32,53 @@ const myUrl = new URL(window.location.href)
 const z = myUrl.searchParams.has('z') ? Number(myUrl.searchParams.get('z')) : 4
 const x = myUrl.searchParams.has('x') ? Number(myUrl.searchParams.get('x')) : 0
 const y = myUrl.searchParams.has('y') ? Number(myUrl.searchParams.get('y')) : 0
+const i = myUrl.searchParams.has('i') ? myUrl.searchParams.get('i') as LayoutType : 'surface'
 
 export default function Map() {
   // Init Map
   const center = new L.LatLng(x, y)
   const [zoom, setZoom] = useState(z)
-  const [layout, setLayout] = useState<LayoutType>('surface')
+  const [layout, setLayout] = useState<LayoutType>(i)
+
+  const [selectItems, setSelectItems] = useState<Set<string>>(new Set())
 
   const [searchParams, setSearchParams] = useSearchParams()
 
   useEffect(() => {
     setSearchParams({
-      z: `${z}`,
       x: `${x}`,
-      y: `${y}`
+      y: `${y}`,
+      z: `${z}`,
+      i: layout
     })
   }, [])
+
+  useEffect(() => {
+    setSearchParams({
+      x: `${x}`,
+      y: `${y}`,
+      z: `${z}`,
+      i: layout
+    })
+  }, [layout])
 
   return (
     <MapContainer
       id="map"
-      style={mapStyle}
       crs={zeldaCRS}
       center={center}
       zoom={zoom}
       zoomControl={false}
       attributionControl={false}
-      minZoom={3}
+      minZoom={2}
       maxZoom={8}
       maxBounds={bounds}
     >
       {/* 事件控制 */}
-      <MapEvent setZoom={setZoom} />
+      <MapEvent
+        setZoom={setZoom}
+        layout={layout}
+      />
 
       {/* 控制面板 */}
       <div
@@ -74,7 +88,9 @@ export default function Map() {
         className="leaflet-top leaflet-left"
       >
         <div className="leaflet-control zelda-bg bg-[length:140%] !m-0 flex h-screen flex-col justify-center gap-y-10">
-          <FilterContorl />
+          <FilterContorl
+            setSelectItems={setSelectItems}
+          />
           <LayerControl
             setLayout={setLayout}
             layout={layout}
@@ -85,6 +101,19 @@ export default function Map() {
 
       {/* Markers */}
       <PlaceNameMarks
+        zoom={zoom}
+        layout={layout}
+      />
+
+      {/* {layout === 'surface' && (
+        <SurfaceMarks
+          zoom={zoom}
+          layout={layout}
+        />
+      )} */}
+
+      <SkyMarks
+        selectItems={selectItems}
         zoom={zoom}
         layout={layout}
       />

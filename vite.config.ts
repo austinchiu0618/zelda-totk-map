@@ -14,7 +14,8 @@ export default defineConfig({
       dts: 'src/auto-imports.d.ts',
       imports: [
         'react',
-        'react-router-dom'
+        'react-router-dom',
+        'react-i18next'
       ]
     })
   ],

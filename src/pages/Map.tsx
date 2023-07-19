@@ -1,18 +1,16 @@
 import L from 'leaflet'
 import { MapContainer, TileLayer } from 'react-leaflet'
-import { useTranslation } from 'react-i18next'
-// Style
+
 import '@/styles/style.css'
 import 'leaflet/dist/leaflet.css'
 
-// component
-import MapEvent from '@/components/MapEvent'
-import FilterContorl from '@/components/FilterContorl'
-import LayerControl from '@/components/LayerControl'
-import ZoomControl from '@/components/ZoomContorl'
-import PlaceNameMarks from '@/components/PlaceNameMarks'
-import SkyMarks from '@/components/SkyMarks'
-// type
+import { MapEvent,
+  FilterContorl,
+  LayerControl,
+  ZoomControl,
+  PlaceNameMarks,
+  SkyMarks } from '@/constants/component'
+
 import type { LayoutType } from '@/types'
 
 // Set init value
@@ -32,11 +30,11 @@ const myUrl = new URL(window.location.href)
 const z = myUrl.searchParams.has('z') ? Number(myUrl.searchParams.get('z')) : 4
 const x = myUrl.searchParams.has('x') ? Number(myUrl.searchParams.get('x')) : 0
 const y = myUrl.searchParams.has('y') ? Number(myUrl.searchParams.get('y')) : 0
-const i = myUrl.searchParams.has('i') ? myUrl.searchParams.get('i') as LayoutType : 'surface'
+const i = myUrl.searchParams.has('i') ? (myUrl.searchParams.get('i') as LayoutType) : 'surface'
+const center = new L.LatLng(x, y)
 
 export default function Map() {
   // Init Map
-  const center = new L.LatLng(x, y)
   const [zoom, setZoom] = useState(z)
   const [layout, setLayout] = useState<LayoutType>(i)
 
@@ -46,85 +44,61 @@ export default function Map() {
 
   useEffect(() => {
     setSearchParams({
-      x: `${x}`,
-      y: `${y}`,
-      z: `${z}`,
-      i: layout
-    })
-  }, [])
-
-  useEffect(() => {
-    setSearchParams({
-      x: `${x}`,
-      y: `${y}`,
-      z: `${z}`,
+      x: `${searchParams.get('x') ?? x}`,
+      y: `${searchParams.get('y') ?? y}`,
+      z: `${searchParams.get('z') ?? z}`,
       i: layout
     })
   }, [layout])
 
   return (
-    <MapContainer
-      id="map"
-      crs={zeldaCRS}
-      center={center}
-      zoom={zoom}
-      zoomControl={false}
-      attributionControl={false}
-      minZoom={2}
-      maxZoom={8}
-      maxBounds={bounds}
-    >
-      {/* 事件控制 */}
-      <MapEvent
-        setZoom={setZoom}
-        layout={layout}
-      />
-
+    // maxBounds={bounds} 地圖會回到中心
+    <div className="relative z-0 h-[calc(100vh-48px)]">
       {/* 控制面板 */}
-      <div
-        onDoubleClickCapture={(e) => {
-          e.stopPropagation()
-        }}
-        className="leaflet-top leaflet-left"
-      >
-        <div className="leaflet-control zelda-bg bg-[length:140%] !m-0 flex h-screen flex-col justify-center gap-y-10">
+      <div className="leaflet-top leaflet-left h-full">
+        <div className="leaflet-control zelda-bg !m-0 flex h-full flex-col justify-center gap-y-12 bg-[length:140%]">
           <FilterContorl
             setSelectItems={setSelectItems}
-          />
+            selectItems={selectItems} />
           <LayerControl
             setLayout={setLayout}
-            layout={layout}
-          />
-          <ZoomControl />
+            layout={layout} />
+          <ZoomControl
+            zoom={zoom}
+            setZoom={setZoom} />
         </div>
       </div>
 
-      {/* Markers */}
-      <PlaceNameMarks
-        zoom={zoom}
-        layout={layout}
-      />
-
-      {/* {layout === 'surface' && (
-        <SurfaceMarks
-          zoom={zoom}
-          layout={layout}
-        />
-      )} */}
-
-      <SkyMarks
-        selectItems={selectItems}
-        zoom={zoom}
-        layout={layout}
-      />
-
       {/* 地圖 */}
-      <TileLayer
-        bounds={bounds}
-        noWrap
-        tms
-        url={`src/assets/tiles/${layout}/{z}/{x}/{y}.png`}
-      />
-    </MapContainer>
+      <MapContainer
+        id="map"
+        crs={zeldaCRS}
+        center={center}
+        zoom={zoom}
+        zoomControl={false}
+        attributionControl={false}
+        minZoom={3}
+        maxZoom={8}>
+        <TileLayer
+          bounds={bounds}
+          noWrap
+          tms
+          url={`src/assets/tiles/${layout}/{z}/{x}/{y}.png`} />
+
+        {/* Markers */}
+        <PlaceNameMarks
+          zoom={zoom}
+          layout={layout} />
+
+        <SkyMarks
+          selectItems={selectItems}
+          zoom={zoom} />
+
+        {/* 事件控制 */}
+        <MapEvent
+          zoom={zoom}
+          setZoom={setZoom} />
+      </MapContainer>
+    </div>
   )
 }

@@ -1,18 +1,17 @@
 import L from 'leaflet'
 import { Marker } from 'react-leaflet'
 import sky from '@/assets/markers/sky/locations.json'
-import type { LayerType, LayoutType, LocationType, MarkerType } from '@/types'
+import type { LayerType, LayoutType, LocationType } from '@/types'
 
 type LocationMarksProps = {
   zoom: number,
-  layout: LayoutType,
   selectItems: Set<string>
 }
 
 const locations:LocationType[] = sky
 
 export default function SkyMarks(props: LocationMarksProps) {
-  const { zoom, layout, selectItems } = props
+  const { zoom, selectItems } = props
   return (
     <div>
       {locations.filter((location) => {
@@ -40,8 +39,7 @@ export default function SkyMarks(props: LocationMarksProps) {
                     iconUrl: `src/assets/icons/${layer.icon.url}`,
                     iconSize: [layer.icon.width, layer.icon.height],
                     iconAnchor: [layer.icon.width / 2, layer.icon.height / 2]
-                  })}
-                />
+                  })} />
               ))}
 
             </div>

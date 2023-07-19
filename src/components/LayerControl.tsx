@@ -24,37 +24,31 @@ export default function LayerControl(props: LayerControlProps) {
       {/* sky */}
       <div
         className="icon-button"
-        onClick={() => setLayout('sky')}
-      >
+        onClick={() => setLayout('sky')}>
         <img
           className="object-cover"
           ref={skyRef}
-          alt="skyIcon"
-        />
+          alt="skyIcon" />
       </div>
 
       {/* surface */}
       <div
         className="icon-button"
-        onClick={() => setLayout('surface')}
-      >
+        onClick={() => setLayout('surface')}>
         <img
           className="object-cover"
           ref={surfaceRef}
-          alt="surfaceIcon"
-        />
+          alt="surfaceIcon" />
       </div>
 
       {/* depths */}
       <div
         className="icon-button"
-        onClick={() => setLayout('depths')}
-      >
+        onClick={() => setLayout('depths')}>
         <img
           className="object-cover"
           ref={depthsRef}
-          alt="depthsIcon"
-        />
+          alt="depthsIcon" />
       </div>
     </div>
   )

@@ -50,6 +50,7 @@ module.exports = {
     'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/no-static-element-interactions': 'off',
 
+    'react/jsx-closing-bracket-location': [1, 'after-props'],
     'react/jsx-max-props-per-line': ['error', { maximum: 1 }],
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx', '.ts', '.tsx'] }]
   }

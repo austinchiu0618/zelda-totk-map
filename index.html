@@ -7,7 +7,14 @@
     <title>Zelda TOTK Map</title>
   </head>
   <body>
-    <div id="root" class="w-screen h-screen visible cursor-pointer"></div>
+    <div id="root" class="visible h-screen w-screen cursor-pointer"></div>
+
+    <script type="text/javascript">
+      document.oncontextmenu = () => false
+      document.onselectstart = () => false
+      // document.onmousedown = () => false
+    </script>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

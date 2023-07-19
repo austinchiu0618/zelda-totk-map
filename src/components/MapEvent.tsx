@@ -11,6 +11,7 @@ export default function MapEvent(props: MapEventProps) {
   const map = useMap()
 
   useEffect(() => {
+    if (map.getZoom() === zoom) return
     map.setZoom(zoom)
   }, [zoom])
 

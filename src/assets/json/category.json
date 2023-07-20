@@ -4,7 +4,7 @@
     "items": [
       {
         "name": "Skyview Tower",
-        "icon": ""
+        "icon": "tower.png"
       },
       {
         "name": "Shrine of Light",
@@ -12,19 +12,19 @@
       },
       {
         "name": "Lightroot",
-        "icon": ""
+        "icon": "lightroot.png"
       },
       {
         "name": "Tech Lab",
-        "icon": ""
+        "icon": "lab.png"
       },
       {
         "name": "Dungeon",
-        "icon": ""
+        "icon": "windtemple.png"
       },
       {
         "name": "Other Travel Gates",
-        "icon": ""
+        "icon": "start.png"
       }
     ]
   },
@@ -33,31 +33,31 @@
     "items": [
       {
         "name": "Main Quest",
-        "icon": ""
-      },
-      {
-        "name": "Quest Objective",
-        "icon": ""
+        "icon": "mainquest.png"
       },
       {
         "name": "Side Adventure",
-        "icon": ""
-      },
-      {
-        "name": "Dragon's Tear",
-        "icon": ""
+        "icon": "adventure.png"
       },
       {
         "name": "Shrine Quest",
-        "icon": ""
-      },
-      {
-        "name": "Zonai Relief",
-        "icon": ""
+        "icon": "shrinequest.png"
       },
       {
         "name": "Side Quest",
-        "icon": ""
+        "icon": "sidequest.png"
+      },
+      {
+        "name": "Dragon's Tear",
+        "icon": "tear.png"
+      },
+      {
+        "name": "Quest Objective",
+        "icon": "objective.png"
+      },
+      {
+        "name": "Zonai Relief",
+        "icon": "relief.png"
       }
     ]
   },
@@ -66,31 +66,31 @@
     "items": [
       {
         "name": "Korok Seed",
-        "icon": ""
-      },
-      {
-        "name": "Armor",
-        "icon": ""
+        "icon": "korok.png"
       },
       {
         "name": "Treasure Chest",
-        "icon": ""
+        "icon": "treasure.png"
+      },
+      {
+        "name": "Armor",
+        "icon": "treasurearmor.png"
       },
       {
         "name": "Unique Weapon",
-        "icon": ""
+        "icon": "treasureweapon.png"
       },
       {
         "name": "Sage's Will",
-        "icon": ""
-      },
-      {
-        "name": "Yiga Schematic",
-        "icon": ""
+        "icon": "sageswill.png"
       },
       {
         "name": "Old Map",
-        "icon": ""
+        "icon": "oldmap.png"
+      },
+      {
+        "name": "Yiga Schematic",
+        "icon": "schematic.png"
       }
     ]
   },
@@ -99,19 +99,19 @@
     "items": [
       {
         "name": "Village",
-        "icon": ""
+        "icon": "village.png"
       },
       {
         "name": "Cave",
-        "icon": ""
+        "icon": "cave.png"
       },
       {
         "name": "Chasm",
-        "icon": ""
+        "icon": "chasm.png"
       },
       {
         "name": "Well",
-        "icon": ""
+        "icon": "well.png"
       }
     ]
   },
@@ -120,47 +120,47 @@
     "items": [
       {
         "name": "Stable",
-        "icon": ""
+        "icon": "stable.png"
       },
       {
         "name": "Other Shops",
-        "icon": ""
+        "icon": "othershops.png"
       },
       {
         "name": "Inn",
-        "icon": ""
+        "icon": "inn.png"
       },
       {
         "name": "Great Fairy",
-        "icon": ""
+        "icon": "fountain.png"
       },
       {
         "name": "General Store",
-        "icon": ""
-      },
-      {
-        "name": "Device Dispenser",
-        "icon": ""
+        "icon": "general.png"
       },
       {
         "name": "Armor Shop",
-        "icon": ""
-      },
-      {
-        "name": "Goddess Statue",
-        "icon": ""
-      },
-      {
-        "name": "Bargainer Statue",
-        "icon": ""
-      },
-      {
-        "name": "Cooking Pot",
-        "icon": ""
+        "icon": "armor.png"
       },
       {
         "name": "Koltin",
-        "icon": ""
+        "icon": "monster.png"
+      },
+      {
+        "name": "Bargainer Statue",
+        "icon": "bargainer.png"
+      },
+      {
+        "name": "Goddess Statue",
+        "icon": "statue.png"
+      },
+      {
+        "name": "Cooking Pot",
+        "icon": "pot.png"
+      },
+      {
+        "name": "Device Dispenser",
+        "icon": "dispenser.png"
       }
     ]
   },
@@ -169,15 +169,15 @@
     "items": [
       {
         "name": "Hudson Sign",
-        "icon": ""
+        "icon": "hudsonsign.png"
       },
       {
         "name": "Cherry Tree",
-        "icon": ""
+        "icon": "cherry-blossom.png"
       },
       {
         "name": "Minigames",
-        "icon": ""
+        "icon": "minigame.png"
       }
     ]
   },
@@ -186,39 +186,39 @@
     "items": [
       {
         "name": "Flux Construct",
-        "icon": ""
+        "icon": "square.png"
       },
       {
         "name": "Lynel",
-        "icon": ""
+        "icon": "lynel.png"
       },
       {
         "name": "Hinox",
-        "icon": ""
+        "icon": "hinox.png"
       },
       {
         "name": "Molduga",
-        "icon": ""
+        "icon": "molduga.png"
       },
       {
         "name": "Stone Talus",
-        "icon": ""
+        "icon": "ore.png"
       },
       {
         "name": "Gloom Spawn",
-        "icon": ""
+        "icon": "hand-solid.png"
       },
       {
         "name": "Frox",
-        "icon": ""
+        "icon": "frox.png"
       },
       {
         "name": "Dungeon Boss",
-        "icon": ""
+        "icon": "skull.png"
       },
       {
         "name": "Gleeok",
-        "icon": ""
+        "icon": "gleeok.png"
       }
     ]
   }

@@ -35,7 +35,7 @@
               3357.43604
             ],
             "elv": 1633.36804,
-            "id": "LargeDungeonWater1",
+            "id": "LargeDungeonWater",
             "name": "Water Temple",
             "link": "Water Temple (Tears of the Kingdom)"
           }
@@ -931,7 +931,7 @@
     ]
   },
   {
-    "name": "Other Travel Gate",
+    "name": "Other Travel Gates",
     "source": "summary",
     "layers": [
       {

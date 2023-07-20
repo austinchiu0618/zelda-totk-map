@@ -1,4 +1,5 @@
 export type LayoutType = 'sky' | 'surface' | 'depths'
+export type zoom = '0'|'1'|'2'|'3'|'4'|'5'|'6'|'7'|'8'
 
 export interface MarkerType {
   coords: number[];
@@ -6,6 +7,9 @@ export interface MarkerType {
   id: string;
   name?: string;
   link?: string;
+  // zoomAdjustedCoords?: {
+  //   [key: any]: number[]
+  // }
 }
 
 export interface IconType {
@@ -25,6 +29,6 @@ export interface LayerType {
 export interface LocationType {
   name: string,
   link?: string;
-  source: string,
+  source?: string,
   layers: LayerType[]
 }

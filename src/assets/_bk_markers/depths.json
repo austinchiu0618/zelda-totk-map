@@ -3593,7 +3593,7 @@
       {
         "minZoom": 4,
         "icon": {
-          "url": "hinox.svg",
+          "url": "hinox.png",
           "width": 25,
           "height": 25
         },
@@ -4451,7 +4451,7 @@
       {
         "minZoom": 4,
         "icon": {
-          "url": "frox.svg",
+          "url": "frox.png",
           "width": 25,
           "height": 25
         },
@@ -4867,7 +4867,7 @@
       {
         "minZoom": 4,
         "icon": {
-          "url": "gleeok.svg",
+          "url": "gleeok.png",
           "width": 25,
           "height": 25
         },
@@ -5235,7 +5235,7 @@
       {
         "minZoom": 4,
         "icon": {
-          "url": "hand-solid.svg",
+          "url": "hand-solid.png",
           "width": 25,
           "height": 25
         },

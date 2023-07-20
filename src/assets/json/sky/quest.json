@@ -208,7 +208,7 @@
       {
         "minZoom": 4,
         "icon": {
-          "url": "minigame.svg",
+          "url": "minigame.png",
           "width": 30,
           "height": 30
         },

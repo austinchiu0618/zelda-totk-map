@@ -387,8 +387,8 @@
         "minZoom": 2,
         "icon": {
           "url": "dispenser.png",
-          "width": 36,
-          "height": 36
+          "width": 28,
+          "height": 28
         },
         "markers": [
           {
@@ -1281,7 +1281,7 @@
       {
         "minZoom": 4,
         "icon": {
-          "url": "gleeok.svg",
+          "url": "gleeok.png",
           "width": 25,
           "height": 25
         },

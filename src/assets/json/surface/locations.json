@@ -1594,8 +1594,8 @@
         "minZoom": 2,
         "icon": {
           "url": "dispenser.png",
-          "width": 36,
-          "height": 36
+          "width": 28,
+          "height": 28
         },
         "markers": [
           {
@@ -5749,7 +5749,7 @@
       {
         "minZoom": 3,
         "icon": {
-          "url": "cherry-blossom.svg",
+          "url": "cherry-blossom.png",
           "width": 25,
           "height": 25
         },
@@ -7321,7 +7321,7 @@
       {
         "minZoom": 5,
         "icon": {
-          "url": "hudsonsign.svg",
+          "url": "hudsonsign.png",
           "width": 24,
           "height": 24
         },
@@ -7985,7 +7985,7 @@
       {
         "minZoom": 4,
         "icon": {
-          "url": "hinox.svg",
+          "url": "hinox.png",
           "width": 25,
           "height": 25
         },
@@ -8967,7 +8967,7 @@
       {
         "minZoom": 4,
         "icon": {
-          "url": "gleeok.svg",
+          "url": "gleeok.png",
           "width": 25,
           "height": 25
         },
@@ -9083,7 +9083,7 @@
       {
         "minZoom": 4,
         "icon": {
-          "url": "molduga.svg",
+          "url": "molduga.png",
           "width": 25,
           "height": 25
         },
@@ -9305,7 +9305,7 @@
       {
         "minZoom": 4,
         "icon": {
-          "url": "hand-solid.svg",
+          "url": "hand-solid.png",
           "width": 25,
           "height": 25
         },

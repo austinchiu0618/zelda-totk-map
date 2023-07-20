@@ -1,6 +1,6 @@
 import L from 'leaflet'
 import { Marker } from 'react-leaflet'
-import placeNameJson from '@/assets/markers/placeName.json'
+import placeNameJson from '@/assets/json/placeName.json'
 import type { LayoutType, LayerType } from '@/types'
 
 type LocationMarksProps = {

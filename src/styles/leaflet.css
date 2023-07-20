@@ -1,0 +1,18 @@
+/* leaflet */
+
+.leaflet-div-icon {
+  background: revert !important;
+  border: revert !important;
+  margin-left: revert !important;
+  margin-top: revert !important;
+  width: revert !important;
+}
+
+.leaflet-div-icon .locationName {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 18px !important;
+  color: #ebe3a5 !important;
+  text-shadow: -1px 0 #91793e, 0 1px #91793e, 1px 0 #91793e, 0 -1px #91793e;
+  white-space: nowrap; 
+}

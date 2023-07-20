@@ -1,11 +1,17 @@
+@import './leaflet.css';
+@import './marker.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.no-bar::-webkit-scrollbar{
+  display: none;
+  width: 0 !important
+}
+
 #map {
   width: 100vw;
   height: 100%;
-  /* height: calc(100vh - 48px); */
   background-color: #000;
 }
 
@@ -40,27 +46,5 @@
   /* background-size: 140%; */
 }
 
-.no-bar::-webkit-scrollbar{
-  display: none;
-  width: 0 !important
-}
 
-/* leaflet */
-
-.leaflet-div-icon {
-  background: revert !important;
-  border: revert !important;
-  margin-left: revert !important;
-  margin-top: revert !important;
-  width: revert !important;
-}
-
-.leaflet-div-icon .locationName {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  font-size: 18px !important;
-  color: #ebe3a5 !important;
-  text-shadow: -1px 0 #91793e, 0 1px #91793e, 1px 0 #91793e, 0 -1px #91793e;
-  white-space: nowrap; 
-}
 

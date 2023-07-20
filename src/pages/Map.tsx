@@ -90,9 +90,11 @@ export default function Map() {
           zoom={zoom}
           layout={layout} />
 
+        {(selectItems.size === 0 || layout === 'sky') && (
         <SkyMarks
           selectItems={selectItems}
           zoom={zoom} />
+        )}
 
         {/* 事件控制 */}
         <MapEvent

@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from '@/pages/Home'
 

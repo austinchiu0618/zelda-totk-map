@@ -9,8 +9,8 @@ interface FilterLayerType extends LayerType {
 
 // component
 function LoaclMarker({ marker, icon, location }: { marker: MarkerType; icon: IconType; location:string}) {
-  const { t, i18n } = useTranslation()
-  // console.log(i18n)
+  const { t } = useTranslation()
+
   return (
     <Marker
       key={marker.id}

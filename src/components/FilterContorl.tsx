@@ -11,7 +11,9 @@ export default function FilterContorl(props: PropsType) {
   const { selectItems, setSelectItems } = props
   const [isShowFilter, setIsShowFilter] = useState(true)
 
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+
+  const lang = i18n.language
 
   const selectHandle = (name: string) => {
     setSelectItems((prev) => {
@@ -59,7 +61,7 @@ export default function FilterContorl(props: PropsType) {
 
       {/* 展開 */}
       <div
-        className={`absolute left-14 top-0 h-full w-[360px] bg-black ${
+        className={`absolute left-14 top-0 h-full w-[380px] bg-black ${
           isShowFilter ? 'block' : 'hidden'
         }`}>
         <div className="flex justify-around space-x-1 py-2 text-lg text-white">
@@ -82,7 +84,7 @@ export default function FilterContorl(props: PropsType) {
           </button>
         </div>
 
-        <div className="no-bar flex h-[calc(100vh-48px-68px)] flex-1 flex-col space-y-6 overflow-y-scroll px-4 pb-10">
+        <div className="no-bar flex h-[calc(100vh-48px-68px)] flex-1 flex-col space-y-6 overflow-y-scroll px-3 pb-10">
           {categories.map((category) => (
             <div
               key={category.name}
@@ -95,7 +97,7 @@ export default function FilterContorl(props: PropsType) {
                 {category.items.map((item) => (
                   <div
                     key={item.name}
-                    className={`flex items-center cursor-pointer space-x-2.5 px-2 py-2.5 ${
+                    className={`flex cursor-pointer items-center space-x-2 pl-2 py-2 ${
                       (selectItems.has(item.name) || selectItems.has('all')) && 'bg-white/10'
                     }`}
                     onClick={() => {
@@ -105,7 +107,13 @@ export default function FilterContorl(props: PropsType) {
                       className="h-[28px] w-[28px]"
                       src={`src/assets/icons/${item.icon}`}
                       alt="icon" />
-                    <span>{t(item.name, { ns: 'totk' })}</span>
+                    <span className={`${
+                      (lang === 'ja' && t(item.name, { ns: 'totk' }).length > 7) && 'text-[13px]'
+                    } ${
+                      (lang === 'en' && t(item.name, { ns: 'totk' }).length > 15) && 'text-[15px]'
+                    }`}>
+                      {t(item.name, { ns: 'totk' })}
+                    </span>
                   </div>
                 ))}
               </div>

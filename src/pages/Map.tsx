@@ -1,9 +1,6 @@
 import L from 'leaflet'
 import { MapContainer, TileLayer } from 'react-leaflet'
 
-import '@/styles/style.css'
-import 'leaflet/dist/leaflet.css'
-
 import { MapEvent,
   FilterContorl,
   LayerControl,

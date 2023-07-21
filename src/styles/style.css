@@ -39,10 +39,13 @@
 }
 
 
-.title {
+.navbar {
   background: linear-gradient(270deg,#60b7c7,#227483);
-  text-shadow: -1px 0 #227483, 0 1px #227483, 1px 0 #227483, 0 -1px #227483;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  text-shadow: -1px 0 #227483, 0 1px #227483, 1px 0 #227483, 0 -1px #227483;
 }
 
 .zelda-bg {

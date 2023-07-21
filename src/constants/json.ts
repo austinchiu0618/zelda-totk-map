@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import depthsLocation from '@/assets/json/depths/locations.json'
 import skyLocation from '@/assets/json/sky/locations.json'
 import surfaceLocation from '@/assets/json/surface/locations.json'

@@ -16,7 +16,7 @@
               163,
               -269
             ],
-            "elv": "26",
+            "elv": 26,
             "id": "MQ-CrisisatHyruleCastle",
             "name": "Crisis at Hyrule Castle",
             "link": "Crisis at Hyrule Castle"
@@ -26,7 +26,7 @@
               153,
               -252
             ],
-            "elv": "26",
+            "elv": 26,
             "id": "MQ-RegionalPhenomena",
             "name": "Regional Phenomena",
             "link": "Regional Phenomena"
@@ -36,7 +36,7 @@
               144,
               -254
             ],
-            "elv": "20",
+            "elv": 20,
             "id": "MQ-CameraWorkintheDepths",
             "name": "Camera Work in the Depths",
             "link": "Camera Work in the Depths"
@@ -46,7 +46,7 @@
               732,
               -1315
             ],
-            "elv": "85",
+            "elv": 85,
             "id": "MQ-ImpaandtheGeoglyphs",
             "name": "Impa and the Geoglyphs",
             "link": "Impa and the Geoglyphs"
@@ -56,7 +56,7 @@
               922,
               210
             ],
-            "elv": "27",
+            "elv": 27,
             "id": "MQ-ImpaandtheGeoglyphs2",
             "name": "Impa and the Geoglyphs",
             "link": "Impa and the Geoglyphs"
@@ -66,7 +66,7 @@
               963,
               -1412
             ],
-            "elv": "124",
+            "elv": 124,
             "id": "MQ-TheDragonsTears",
             "name": "The Dragon's Tears",
             "link": "The Dragon's Tears"
@@ -76,7 +76,7 @@
               1802,
               -3596
             ],
-            "elv": "212",
+            "elv": 212,
             "id": "MQ-TulinofRitoVillage",
             "name": "Tulin of Rito Village",
             "link": "Tulin of Rito Village"
@@ -86,7 +86,7 @@
               134,
               -255
             ],
-            "elv": "18",
+            "elv": 18,
             "id": "MQ-AMysteryintheDepths",
             "name": "A Mystery in the Depths",
             "link": "A Mystery in the Depths"
@@ -96,7 +96,7 @@
               2447,
               1649
             ],
-            "elv": "381",
+            "elv": 381,
             "id": "MQ-YunoboofGoronCity",
             "name": "Yunobo of Goron City",
             "link": "Yunobo of Goron City"
@@ -106,7 +106,7 @@
               463,
               3301
             ],
-            "elv": "139",
+            "elv": 139,
             "id": "MQ-TheSludgeCoveredStatue",
             "name": "The Sludge-Covered Statue",
             "link": "The Sludge-Covered Statue"
@@ -116,7 +116,7 @@
               463,
               3305
             ],
-            "elv": "139",
+            "elv": 139,
             "id": "MQ-SidonoftheZora",
             "name": "Sidon of the Zora",
             "link": "Sidon of the Zora"
@@ -126,7 +126,7 @@
               882,
               3407
             ],
-            "elv": "399",
+            "elv": 399,
             "id": "MQ-TheBrokenSlate",
             "name": "The Broken Slate",
             "link": "The Broken Slate"
@@ -136,7 +136,7 @@
               877,
               3404
             ],
-            "elv": "399",
+            "elv": 399,
             "id": "MQ-CluestotheSky",
             "name": "Clues to the Sky",
             "link": "Clues to the Sky"
@@ -146,7 +146,7 @@
               534,
               3326
             ],
-            "elv": "150",
+            "elv": 150,
             "id": "MQ-RestoringtheZoraArmor",
             "name": "Restoring the Zora Armor",
             "link": "Restoring the Zora Armor"
@@ -156,7 +156,7 @@
               -2953,
               -3875
             ],
-            "elv": "33",
+            "elv": 33,
             "id": "MQ-RijuofGerudoTown",
             "name": "Riju of Gerudo Town",
             "link": "Riju of Gerudo Town"
@@ -166,7 +166,7 @@
               153,
               -263
             ],
-            "elv": "26",
+            "elv": 26,
             "id": "MQ-FindtheFifthSage",
             "name": "Find the Fifth Sage",
             "link": "Find the Fifth Sage"
@@ -176,7 +176,7 @@
               -947,
               1816
             ],
-            "elv": "112",
+            "elv": 112,
             "id": "MQ-SecretoftheRingRuins",
             "name": "Secret of the Ring Ruins",
             "link": "Secret of the Ring Ruins"
@@ -186,7 +186,7 @@
               2145,
               430
             ],
-            "elv": "162",
+            "elv": 162,
             "id": "MQ-RecoveringtheHerosSword",
             "name": "Recovering the Hero's Sword",
             "link": "Recovering the Hero's Sword"
@@ -196,7 +196,7 @@
               165,
               -243
             ],
-            "elv": "26",
+            "elv": 26,
             "id": "MQ-DestroyGanondorf",
             "name": "Destroy Ganondorf",
             "link": "Destroy Ganondorf"
@@ -222,7 +222,7 @@
               1141,
               -3952
             ],
-            "elv": "111",
+            "elv": 111,
             "id": "TheGisaCraterCrystal",
             "name": "The Gisa Crater Crystal",
             "link": "The Gisa Crater Crystal"
@@ -232,7 +232,7 @@
               1826,
               -3632
             ],
-            "elv": "204",
+            "elv": 204,
             "id": "TheWhiteBirdsGuidance",
             "name": "The White Bird's Guidance",
             "link": "The White Bird's Guidance"
@@ -242,7 +242,7 @@
               -3395,
               -694
             ],
-            "elv": "172",
+            "elv": 172,
             "id": "RideTheGiantHorse",
             "name": "Ride The Giant Horse",
             "link": "Ride The Giant Horse"
@@ -252,7 +252,7 @@
               3099,
               -2999
             ],
-            "elv": "514",
+            "elv": 514,
             "id": "TheNorthwestHebraCaveCrystal",
             "name": "The Northwest Hebra Cave Crystal",
             "link": "The Northwest Hebra Cave Crystal"
@@ -262,7 +262,7 @@
               3354,
               -2556
             ],
-            "elv": "245",
+            "elv": 245,
             "id": "TheNorthtHebraMountainsCrystal",
             "name": "The North Hebra Mountains Crystal",
             "link": "The North Hebra Mountains Crystal"
@@ -272,7 +272,7 @@
               2165,
               344
             ],
-            "elv": "150",
+            "elv": 150,
             "id": "NoneShallPass",
             "name": "None Shall Pass?",
             "link": "None Shall Pass?"
@@ -282,7 +282,7 @@
               2085,
               382
             ],
-            "elv": "145",
+            "elv": 145,
             "id": "MacasSpecialPlace",
             "name": "Maca's Special Place",
             "link": "Maca's Special Place"
@@ -292,7 +292,7 @@
               2160,
               561
             ],
-            "elv": "158",
+            "elv": 158,
             "id": "APrettyStoneandFiveGoldenApples",
             "name": "A Pretty Stone and Five Golden Apples",
             "link": "A Pretty Stone and Five Golden Apples"
@@ -302,7 +302,7 @@
               2757,
               2962
             ],
-            "elv": "524",
+            "elv": 524,
             "id": "TheDeathCalderaCrystal",
             "name": "The Death Caldera Crystal",
             "link": "The Death Caldera Crystal"
@@ -312,7 +312,7 @@
               1854,
               2491
             ],
-            "elv": "135",
+            "elv": 135,
             "id": "TheLakeIntenochCaveCrystal",
             "name": "The Lake Intenoch Cave Crystal",
             "link": "The Lake Intenoch Cave Crystal"
@@ -322,7 +322,7 @@
               -521,
               2398
             ],
-            "elv": "154",
+            "elv": 154,
             "id": "DyeingtoFindIt",
             "name": "Dyeing to Find It",
             "link": "Dyeing to Find It"
@@ -332,7 +332,7 @@
               -1086,
               2756
             ],
-            "elv": "100",
+            "elv": 100,
             "id": "TheLanayruRoadCrystal",
             "name": "The Lanayru Road Crystal",
             "link": "The Lanayru Road Crystal"
@@ -342,7 +342,7 @@
               -1358,
               3960
             ],
-            "elv": "465",
+            "elv": 465,
             "id": "TheHighSpringandtheLightRings",
             "name": "The High Spring and the Light Rings",
             "link": "The High Spring and the Light Rings"
@@ -352,7 +352,7 @@
               -875,
               -2136
             ],
-            "elv": "93",
+            "elv": 93,
             "id": "TheSatoriMountainCrystal",
             "name": "The Satori Mountain Crystal",
             "link": "The Satori Mountain Crystal"
@@ -362,7 +362,7 @@
               -1850,
               -2037
             ],
-            "elv": "64",
+            "elv": 64,
             "id": "TheGerudoCanyonCrystal",
             "name": "The Gerudo Canyon Crystal",
             "link": "The Gerudo Canyon Crystal"
@@ -388,7 +388,7 @@
               1677,
               3755
             ],
-            "elv": "92",
+            "elv": 92,
             "id": "MG-TarreyTownRace",
             "name": "Tarrey Town Race",
             "link": "Tarrey Town Race"
@@ -398,7 +398,7 @@
               -1333,
               -3561
             ],
-            "elv": "347",
+            "elv": 347,
             "id": "MG-YigaClanTraining",
             "name": "Yiga Clan Training",
             "link": "Yiga Clan Training"
@@ -408,7 +408,7 @@
               -3690,
               2975
             ],
-            "elv": "1",
+            "elv": 1,
             "id": "MG-LurelinWaterRally",
             "name": "Lurelin Water Rally",
             "link": "Lurelin Water Rally"
@@ -418,7 +418,7 @@
               612,
               -3126
             ],
-            "elv": "81",
+            "elv": 81,
             "id": "MG-UltraBallHaul",
             "name": "Ultra Ball Haul",
             "link": "Ultra Ball Haul"
@@ -428,7 +428,7 @@
               2078,
               1830
             ],
-            "elv": "321",
+            "elv": 321,
             "id": "MG-Mine-CartLand",
             "name": "Mine-Cart Land (Beginner/Intermediate)",
             "link": "Mine-Cart Land"
@@ -438,7 +438,7 @@
               2596,
               2364
             ],
-            "elv": "827",
+            "elv": 827,
             "id": "MG-Mine-CartLandExpert",
             "name": "Mine-Cart Land (Expert)",
             "link": "Mine-Cart Land"
@@ -448,7 +448,7 @@
               -1377,
               -1270
             ],
-            "elv": "175",
+            "elv": 175,
             "id": "MG-StradesTestofStrength",
             "name": "Strade's Test of Strength",
             "link": "Strade's Test of Strength"
@@ -458,7 +458,7 @@
               2318,
               -3794
             ],
-            "elv": "161",
+            "elv": 161,
             "id": "MG-KanelisFlightRange",
             "name": "Kaneli's Flight Range",
             "link": "Kaneli's Flight Range"
@@ -468,7 +468,7 @@
               458,
               -3331
             ],
-            "elv": "164",
+            "elv": 164,
             "id": "MG-RitoWarriorTraining",
             "name": "Rito Warrior Training",
             "link": "Rito Warrior Training"
@@ -478,7 +478,7 @@
               3141,
               -2952
             ],
-            "elv": "572",
+            "elv": 572,
             "id": "MG-SelmiesShield-Surfing",
             "name": "Selmie's Shield-Surfing",
             "link": "Selmie's Shield-Surfing"
@@ -488,7 +488,7 @@
               -3631,
               -3640
             ],
-            "elv": "16",
+            "elv": 16,
             "id": "MG-DesertRace",
             "name": "Desert Race",
             "link": "Desert Race"
@@ -498,7 +498,7 @@
               1794,
               -1542
             ],
-            "elv": "106",
+            "elv": 106,
             "id": "MG-CollecttheSand-Seal1",
             "name": "Collect the Sand-Seal",
             "link": "Collect the Sand-Seal"
@@ -508,7 +508,7 @@
               -1148,
               1050
             ],
-            "elv": "9",
+            "elv": 9,
             "id": "MG-CollecttheSand-Seal2",
             "name": "Collect the Sand-Seal",
             "link": "Collect the Sand-Seal"
@@ -518,7 +518,7 @@
               830,
               4280
             ],
-            "elv": "232",
+            "elv": 232,
             "id": "MG-CollecttheSand-Seal3",
             "name": "Collect the Sand-Seal",
             "link": "Collect the Sand-Seal"
@@ -528,7 +528,7 @@
               -3450,
               510
             ],
-            "elv": "47",
+            "elv": 47,
             "id": "MG-HorseRace",
             "name": "Horse Race",
             "link": "Horse Race"
@@ -538,7 +538,7 @@
               -3754,
               4729
             ],
-            "elv": "109",
+            "elv": 109,
             "id": "MG-BranlisBird-manFlightResearch",
             "name": "Branli's Bird-man Flight Research",
             "link": "Branli's Bird-man Flight Research"
@@ -564,7 +564,7 @@
               100,
               -267
             ],
-            "elv": "8",
+            "elv": 8,
             "id": "SQ-TodaysMenu",
             "name": "Today's Menu",
             "link": "Today's Menu"
@@ -574,7 +574,7 @@
               724,
               -1329
             ],
-            "elv": "85",
+            "elv": 85,
             "id": "SQ-Horse-DrawnDreams",
             "name": "Horse-Drawn Dreams",
             "link": "Horse-Drawn Dreams"
@@ -584,7 +584,7 @@
               1657,
               -2985
             ],
-            "elv": "199",
+            "elv": 199,
             "id": "SQ-CaveMushroomsThatGlow",
             "name": "Cave Mushrooms That Glow",
             "link": "Cave Mushrooms That Glow"
@@ -594,7 +594,7 @@
               3534,
               -798
             ],
-            "elv": "235",
+            "elv": 235,
             "id": "SQ-TheNorthLomeiProphecy",
             "name": "The North Lomei Prophecy",
             "link": "The North Lomei Prophecy"
@@ -604,7 +604,7 @@
               -2076,
               3631
             ],
-            "elv": "178",
+            "elv": 178,
             "id": "SQ-DantzsPrizeCows",
             "name": "Dantz's Prize Cows",
             "link": "Dantz's Prize Cows"
@@ -614,7 +614,7 @@
               -2298,
               3305
             ],
-            "elv": "112",
+            "elv": 112,
             "id": "SQ-ANewChampionsTunic",
             "name": "A New Champion's Tunic",
             "link": "A New Champion's Tunic"
@@ -624,7 +624,7 @@
               -2131,
               3373
             ],
-            "elv": "120",
+            "elv": 120,
             "id": "SQ-MannysBeloved",
             "name": "Manny's Beloved",
             "link": "Manny's Beloved"
@@ -634,7 +634,7 @@
               7,
               779
             ],
-            "elv": "16",
+            "elv": 16,
             "id": "SQ-FellIntoaWell",
             "name": "Fell into a Well!",
             "link": "Fell into a Well!"
@@ -644,7 +644,7 @@
               510,
               -2947
             ],
-            "elv": "144",
+            "elv": 144,
             "id": "SQ-WhereAreTheWells",
             "name": "Where Are the Wells?",
             "link": "Where Are the Wells?"
@@ -654,7 +654,7 @@
               1821,
               -3642
             ],
-            "elv": "184",
+            "elv": 184,
             "id": "SQ-GenlisHomeCooking",
             "name": "Genli's Home Cooking",
             "link": "Genli's Home Cooking"
@@ -664,7 +664,7 @@
               1790,
               -3616
             ],
-            "elv": "214",
+            "elv": 214,
             "id": "SQ-MollitheFletchersQuest",
             "name": "Molli the Fletcher's Quest",
             "link": "Molli the Fletcher's Quest"
@@ -674,7 +674,7 @@
               51,
               -251
             ],
-            "elv": "19",
+            "elv": 19,
             "id": "SQ-SpottingSpot",
             "name": "Spotting Spot",
             "link": "Spotting Spot"
@@ -684,7 +684,7 @@
               64,
               -248
             ],
-            "elv": "19",
+            "elv": 19,
             "id": "SQ-TheIncompleteStable",
             "name": "The Incomplete Stable",
             "link": "The Incomplete Stable"
@@ -694,7 +694,7 @@
               1676,
               -2680
             ],
-            "elv": "256",
+            "elv": 256,
             "id": "SQ-OpentheDoor",
             "name": "Open the Door",
             "link": "Open the Door"
@@ -704,7 +704,7 @@
               1763,
               -3654
             ],
-            "elv": "214",
+            "elv": 214,
             "id": "SQ-FishforFletching",
             "name": "Fish for Fletching",
             "link": "Fish for Fletching"
@@ -714,7 +714,7 @@
               1822,
               -3610
             ],
-            "elv": "218",
+            "elv": 218,
             "id": "SQ-TreasureoftheSecretSprings",
             "name": "Treasure of the Secret Springs",
             "link": "Treasure of the Secret Springs"
@@ -724,7 +724,7 @@
               1824,
               -3609
             ],
-            "elv": "218",
+            "elv": 218,
             "id": "SQ-LegacyoftheRito",
             "name": "Legacy of the Rito",
             "link": "Legacy of the Rito"
@@ -734,7 +734,7 @@
               -174,
               864
             ],
-            "elv": "25",
+            "elv": 25,
             "id": "SQ-AnUninvitedGuest",
             "name": "An Uninvited Guest",
             "link": "An Uninvited Guest"
@@ -744,7 +744,7 @@
               2676,
               3758
             ],
-            "elv": "3",
+            "elv": 3,
             "id": "SQ-GoddessStatueOfPower",
             "name": "Goddess Statue Of Power",
             "link": "Goddess Statue Of Power"
@@ -754,7 +754,7 @@
               -2349,
               875
             ],
-            "elv": "20",
+            "elv": 20,
             "id": "SQ-GoddessStatueOfCourage",
             "name": "Goddess Statue Of Courage",
             "link": "Goddess Statue Of Courage"
@@ -764,7 +764,7 @@
               -1329,
               3914
             ],
-            "elv": "467",
+            "elv": 467,
             "id": "SQ-GoddessStatueofWisdom",
             "name": "Goddess Statue of Wisdom",
             "link": "Goddess Statue of Wisdom"
@@ -774,7 +774,7 @@
               2705,
               -1058
             ],
-            "elv": "-84",
+            "elv": -84,
             "id": "SQ-TheMotherGoddessStatue",
             "name": "The Mother Goddess Statue",
             "link": "The Mother Goddess Statue"
@@ -784,7 +784,7 @@
               2468,
               1660
             ],
-            "elv": "385",
+            "elv": 385,
             "id": "SQ-AmberDealer",
             "name": "Amber Dealer",
             "link": "Amber Dealer"
@@ -794,7 +794,7 @@
               2318,
               -3794
             ],
-            "elv": "161",
+            "elv": 161,
             "id": "SQ-KanelisFlightTraining",
             "name": "Kaneli's Flight Training",
             "link": "Kaneli's Flight Training"
@@ -804,7 +804,7 @@
               -3581,
               -1010
             ],
-            "elv": "219",
+            "elv": 219,
             "id": "SQ-TheGreatTumbleweedPurge",
             "name": "The Great Tumbleweed Purge",
             "link": "The Great Tumbleweed Purge"
@@ -814,7 +814,7 @@
               2475,
               -3581
             ],
-            "elv": "228",
+            "elv": 228,
             "id": "SQ-TheBlockedCave",
             "name": "The Blocked Cave",
             "link": "The Blocked Cave"
@@ -824,7 +824,7 @@
               2457,
               -3218
             ],
-            "elv": "347",
+            "elv": 347,
             "id": "SQ-CrossingtheColdPool",
             "name": "Crossing the Cold Pool",
             "link": "Crossing the Cold Pool"
@@ -834,7 +834,7 @@
               2026,
               -2175
             ],
-            "elv": "363",
+            "elv": 363,
             "id": "SQ-Supply-EyeingFliers",
             "name": "Supply-Eyeing Fliers",
             "link": "Supply-Eyeing Fliers"
@@ -844,7 +844,7 @@
               2542,
               -1662
             ],
-            "elv": "233",
+            "elv": 233,
             "id": "SQ-WhoFindstheHaven",
             "name": "Who Finds the Haven?",
             "link": "Who Finds the Haven?"
@@ -854,7 +854,7 @@
               2542,
               -1662
             ],
-            "elv": "233",
+            "elv": 233,
             "id": "SQ-TheCapturedTent",
             "name": "The Captured Tent",
             "link": "The Captured Tent"
@@ -864,7 +864,7 @@
               -2336,
               -2727
             ],
-            "elv": "62",
+            "elv": 62,
             "id": "SQ-GleeokGuts",
             "name": "Gleeok Guts",
             "link": "Gleeok Guts"
@@ -874,7 +874,7 @@
               2132,
               420
             ],
-            "elv": "143",
+            "elv": 143,
             "id": "SQ-WhirlySwirlyThings",
             "name": "Whirly Swirly Things",
             "link": "Whirly Swirly Things"
@@ -884,7 +884,7 @@
               2177,
               413
             ],
-            "elv": "179",
+            "elv": 179,
             "id": "SQ-TheSecretRoom",
             "name": "The Secret Room",
             "link": "The Secret Room"
@@ -894,7 +894,7 @@
               2180,
               418
             ],
-            "elv": "227",
+            "elv": 227,
             "id": "SQ-WaltonsTreasureHunt",
             "name": "Walton's Treasure Hunt",
             "link": "Walton's Treasure Hunt"
@@ -904,7 +904,7 @@
               1284,
               600
             ],
-            "elv": "47",
+            "elv": 47,
             "id": "SQ-TheTreasureHunters",
             "name": "The Treasure Hunters",
             "link": "The Treasure Hunters"
@@ -914,7 +914,7 @@
               1547,
               1759
             ],
-            "elv": "279",
+            "elv": 279,
             "id": "SQ-RockRoastorDust",
             "name": "Rock Roast or Dust",
             "link": "Rock Roast or Dust"
@@ -924,7 +924,7 @@
               1547,
               1756
             ],
-            "elv": "279",
+            "elv": 279,
             "id": "SQ-MeatforMeat",
             "name": "Meat for Meat",
             "link": "Meat for Meat"
@@ -934,7 +934,7 @@
               2414,
               1615
             ],
-            "elv": "393",
+            "elv": 393,
             "id": "SQ-SimmerstoneSprings",
             "name": "Simmerstone Springs",
             "link": "Simmerstone Springs"
@@ -944,7 +944,7 @@
               2576,
               1744
             ],
-            "elv": "426",
+            "elv": 426,
             "id": "SQ-TheAncientCityGorondia",
             "name": "The Ancient City Gorondia!",
             "link": "The Ancient City Gorondia!"
@@ -954,7 +954,7 @@
               2439,
               1649
             ],
-            "elv": "381",
+            "elv": 381,
             "id": "SQ-TheHiddenTreasureatLizardLakes",
             "name": "The Hidden Treasure at Lizard Lakes",
             "link": "The Hidden Treasure at Lizard Lakes"
@@ -964,7 +964,7 @@
               -3500,
               4516
             ],
-            "elv": "1",
+            "elv": 1,
             "id": "SA-SeekingThePirateHideout",
             "name": "Seeking The Pirate Hideout",
             "link": "Seeking The Pirate Hideout"
@@ -974,7 +974,7 @@
               3101,
               -3669
             ],
-            "elv": "230",
+            "elv": 230,
             "id": "SQ-TheDuchessWhoDisappeared",
             "name": "The Duchess Who Disappeared",
             "link": "The Duchess Who Disappeared"
@@ -984,7 +984,7 @@
               1803,
               -3293
             ],
-            "elv": "121",
+            "elv": 121,
             "id": "SQ-TheRitoRopeBridge",
             "name": "The Rito Rope Bridge",
             "link": "The Rito Rope Bridge"
@@ -994,7 +994,7 @@
               2497,
               1689
             ],
-            "elv": "396",
+            "elv": 396,
             "id": "SQ-SouloftheGorons",
             "name": "Soul of the Gorons",
             "link": "Soul of the Gorons"
@@ -1004,7 +1004,7 @@
               2430,
               1668
             ],
-            "elv": "383",
+            "elv": 383,
             "id": "SQ-Moon-GazingGorons",
             "name": "Moon-Gazing Gorons",
             "link": "Moon-Gazing Gorons"
@@ -1014,7 +1014,7 @@
               -1002,
               1909
             ],
-            "elv": "127",
+            "elv": 127,
             "id": "SQ-Gloom-BorneIllness",
             "name": "Gloom-Borne Illness",
             "link": "Gloom-Borne Illness"
@@ -1024,7 +1024,7 @@
               -1016,
               1815
             ],
-            "elv": "112",
+            "elv": 112,
             "id": "SQ-ATripthroughHistory",
             "name": "A Trip through History",
             "link": "A Trip through History"
@@ -1034,7 +1034,7 @@
               -1022,
               1836
             ],
-            "elv": "116",
+            "elv": 116,
             "id": "SQ-OutoftheInn",
             "name": "Out of the Inn",
             "link": "Out of the Inn"
@@ -1044,7 +1044,7 @@
               -1029,
               1789
             ],
-            "elv": "115",
+            "elv": 115,
             "id": "SQ-FollowtheCuccos",
             "name": "Follow the Cuccos",
             "link": "Follow the Cuccos"
@@ -1054,7 +1054,7 @@
               -1029,
               1789
             ],
-            "elv": "115",
+            "elv": 115,
             "id": "SQ-CodgersQuarrel",
             "name": "Codgers' Quarrel",
             "link": "Codgers' Quarrel"
@@ -1064,7 +1064,7 @@
               548,
               3323
             ],
-            "elv": "163",
+            "elv": 163,
             "id": "SQ-TheNever-EndingLecture",
             "name": "The Never-Ending Lecture",
             "link": "The Never-Ending Lecture"
@@ -1074,7 +1074,7 @@
               486,
               3312
             ],
-            "elv": "150",
+            "elv": 150,
             "id": "SQ-ATokenofFriendship",
             "name": "A Token of Friendship",
             "link": "A Token of Friendship"
@@ -1084,7 +1084,7 @@
               541,
               3274
             ],
-            "elv": "155",
+            "elv": 155,
             "id": "SQ-TheMoonlitPrincess",
             "name": "The Moonlit Princess",
             "link": "The Moonlit Princess"
@@ -1094,7 +1094,7 @@
               511,
               3296
             ],
-            "elv": "140",
+            "elv": 140,
             "id": "SQ-TrueTreasure",
             "name": "True Treasure",
             "link": "True Treasure"
@@ -1104,7 +1104,7 @@
               489,
               3323
             ],
-            "elv": "139",
+            "elv": 139,
             "id": "SQ-ACrabulousDeal",
             "name": "A Crabulous Deal",
             "link": "A Crabulous Deal"
@@ -1114,7 +1114,7 @@
               490,
               3336
             ],
-            "elv": "140",
+            "elv": 140,
             "id": "SQ-GloryoftheZora",
             "name": "Glory of the Zora",
             "link": "Glory of the Zora"
@@ -1124,7 +1124,7 @@
               442,
               3289
             ],
-            "elv": "139",
+            "elv": 139,
             "id": "SQ-AWifeWaftedAway",
             "name": "A Wife Wafted Away",
             "link": "A Wife Wafted Away"
@@ -1134,7 +1134,7 @@
               81,
               -209
             ],
-            "elv": "19",
+            "elv": 19,
             "id": "SQ-VillageAttackedbyPirates",
             "name": "Village Attacked by Pirates",
             "link": "Village Attacked by Pirates"
@@ -1144,7 +1144,7 @@
               -2964,
               -3886
             ],
-            "elv": "51",
+            "elv": 51,
             "id": "SQ-TreasureoftheGerudoDesert",
             "name": "Treasure of the Gerudo Desert",
             "link": "Treasure of the Gerudo Desert"
@@ -1154,7 +1154,7 @@
               -2520,
               -3224
             ],
-            "elv": "23",
+            "elv": 23,
             "id": "SQ-DecoratewithPassion",
             "name": "Decorate with Passion",
             "link": "Decorate with Passion"
@@ -1164,7 +1164,7 @@
               -2952,
               -3884
             ],
-            "elv": "33",
+            "elv": 33,
             "id": "SQ-TheMissingOwner",
             "name": "The Missing Owner",
             "link": "The Missing Owner"
@@ -1174,7 +1174,7 @@
               -2971,
               -3886
             ],
-            "elv": "33",
+            "elv": 33,
             "id": "SQ-TheHeroinesSecret",
             "name": "The Heroines' Secret",
             "link": "The Heroines' Secret"
@@ -1184,7 +1184,7 @@
               -2873,
               -3817
             ],
-            "elv": "43",
+            "elv": 43,
             "id": "SQ-Dalia'sGame",
             "name": "Dalia's Game",
             "link": "Dalia's Game"
@@ -1194,7 +1194,7 @@
               -2927,
               -3768
             ],
-            "elv": "43",
+            "elv": 43,
             "id": "SQ-TotheRuins!",
             "name": "To the Ruins!",
             "link": "To the Ruins!"
@@ -1204,7 +1204,7 @@
               -2582,
               -3272
             ],
-            "elv": "23",
+            "elv": 23,
             "id": "SQ-LostintheDunes",
             "name": "Lost in the Dunes",
             "link": "Lost in the Dunes"
@@ -1214,7 +1214,7 @@
               2439,
               1629
             ],
-            "elv": "384",
+            "elv": 384,
             "id": "SQ-TheAncientCityGorondiaQM",
             "name": "The Ancient City Gorondia?",
             "link": "The Ancient City Gorondia?"
@@ -1224,7 +1224,7 @@
               2681,
               2345
             ],
-            "elv": "514",
+            "elv": 514,
             "id": "SQ-TheAbandonedLaborer",
             "name": "The Abandoned Laborer",
             "link": "The Abandoned Laborer"
@@ -1234,7 +1234,7 @@
               2260,
               1380
             ],
-            "elv": "294",
+            "elv": 294,
             "id": "SQ-MiskosTreasureofAwakeningI",
             "name": "Misko's Treasure of Awakening I",
             "link": "Misko's Treasure of Awakening I"
@@ -1244,7 +1244,7 @@
               410,
               -3528
             ],
-            "elv": "241",
+            "elv": 241,
             "id": "SQ-MiskosTreasureofAwakeningII",
             "name": "Misko's Treasure of Awakening II",
             "link": "Misko's Treasure of Awakening II"
@@ -1254,7 +1254,7 @@
               1536,
               1750
             ],
-            "elv": "278",
+            "elv": 278,
             "id": "SQ-CashInonRipenedFlint",
             "name": "Cash In on Ripened Flint",
             "link": "Cash In on Ripened Flint"
@@ -1264,7 +1264,7 @@
               2596,
               2363
             ],
-            "elv": "827",
+            "elv": 827,
             "id": "SQ-Mine-CartLandDeathMountain",
             "name": "Mine-Cart Land: Death Mountain",
             "link": "Mine-Cart Land: Death Mountain"
@@ -1274,7 +1274,7 @@
               2079,
               1831
             ],
-            "elv": "321",
+            "elv": 321,
             "id": "SQ-Mine-CartLandQuickshotCourse",
             "name": "Mine-Cart Land: Quickshot Course",
             "link": "Mine-Cart Land: Quickshot Course"
@@ -1284,7 +1284,7 @@
               2077,
               1827
             ],
-            "elv": "321",
+            "elv": 321,
             "id": "SQ-Mine-CartLandOpenforBusiness",
             "name": "Mine-Cart Land: Open for Business!",
             "link": "Mine-Cart Land: Open for Business!"
@@ -1294,7 +1294,7 @@
               1138,
               1064
             ],
-            "elv": "22",
+            "elv": 22,
             "id": "SQ-APictureforWoodlandStable",
             "name": "A Picture for Woodland Stable",
             "link": "A Picture for Woodland Stable"
@@ -1304,7 +1304,7 @@
               1326,
               2605
             ],
-            "elv": "150",
+            "elv": 150,
             "id": "SQ-MiskosCaveofChests",
             "name": "Misko's Cave of Chests",
             "link": "Misko's Cave of Chests"
@@ -1314,7 +1314,7 @@
               1427,
               2580
             ],
-            "elv": "135",
+            "elv": 135,
             "id": "SQ-MiskosTreasureTheFierceDeity",
             "name": "Misko's Treasure: The Fierce Deity",
             "link": "Misko's Treasure: The Fierce Deity"
@@ -1324,7 +1324,7 @@
               1314,
               2612
             ],
-            "elv": "149",
+            "elv": 149,
             "id": "SQ-MiskosTreasureManuscript",
             "name": "Misko's Treasure: Twins Manuscript\nMisko's Treasure: Pirate Manuscript\nMisko's Treasure: Heroines Manuscript",
             "link": "Misko's Cave of Chests"
@@ -1334,7 +1334,7 @@
               1141,
               2610
             ],
-            "elv": "148",
+            "elv": 148,
             "id": "SQ-APictureforFoothillStable",
             "name": "A Picture for Foothill Stable",
             "link": "A Picture for Foothill Stable"
@@ -1344,7 +1344,7 @@
               86,
               -252
             ],
-            "elv": "8",
+            "elv": 8,
             "id": "SQ-WANTED",
             "name": "WANTED: Stone Talus\nWANTED: Hinox\nWANTED: Molduga",
             "link": "Gralens"
@@ -1354,7 +1354,7 @@
               727,
               -1358
             ],
-            "elv": "86",
+            "elv": 86,
             "id": "SQ-APictureforNewSerenneStable",
             "name": "A Picture for New Serenne Stable",
             "link": "A Picture for New Serenne Stable"
@@ -1364,7 +1364,7 @@
               547,
               -2927
             ],
-            "elv": "169",
+            "elv": 169,
             "id": "SQ-APictureforTabanthaBridgeStable",
             "name": "A Picture for Tabantha Bridge Stable",
             "link": "A Picture for Tabantha Bridge Stable"
@@ -1374,7 +1374,7 @@
               2570,
               -1651
             ],
-            "elv": "234",
+            "elv": 234,
             "id": "SQ-APictureforSnowfieldStable",
             "name": "A Picture for Snowfield Stable",
             "link": "A Picture for Snowfield Stable"
@@ -1384,7 +1384,7 @@
               -169,
               888
             ],
-            "elv": "26",
+            "elv": 26,
             "id": "SQ-APictureforWetlandStable",
             "name": "A Picture for Wetland Stable",
             "link": "A Picture for Wetland Stable"
@@ -1394,7 +1394,7 @@
               -651,
               1712
             ],
-            "elv": "13",
+            "elv": 13,
             "id": "SQ-TheUltimateDish",
             "name": "The Ultimate Dish?",
             "link": "The Ultimate Dish?"
@@ -1404,7 +1404,7 @@
               -2121,
               3298
             ],
-            "elv": "109",
+            "elv": 109,
             "id": "SQ-HomegrowninHateno",
             "name": "Homegrown in Hateno",
             "link": "Homegrown in Hateno"
@@ -1414,7 +1414,7 @@
               -2509,
               3945
             ],
-            "elv": "0",
+            "elv": 0,
             "id": "SQ-ABottledCryforHelp",
             "name": "A Bottled Cry for Help",
             "link": "A Bottled Cry for Help"
@@ -1424,7 +1424,7 @@
               -1968,
               3363
             ],
-            "elv": "129",
+            "elv": 129,
             "id": "SQ-TeachMeaLessonII",
             "name": "Teach Me a Lesson II",
             "link": "Teach Me a Lesson II"
@@ -1434,7 +1434,7 @@
               -1968,
               3363
             ],
-            "elv": "129",
+            "elv": 129,
             "id": "SQ-TeachMeaLessonI",
             "name": "Teach Me a Lesson I",
             "link": "Teach Me a Lesson I"
@@ -1444,7 +1444,7 @@
               -2035,
               3333
             ],
-            "elv": "117",
+            "elv": 117,
             "id": "SQ-UmasGarden",
             "name": "Uma's Garden",
             "link": "Uma's Garden"
@@ -1454,7 +1454,7 @@
               -1092,
               336
             ],
-            "elv": "10",
+            "elv": 10,
             "id": "SQ-APictureforRiversideStable",
             "name": "A Picture for Riverside Stable",
             "link": "A Picture for Riverside Stable"
@@ -1464,7 +1464,7 @@
               -1271,
               -1160
             ],
-            "elv": "34",
+            "elv": 34,
             "id": "SQ-MiskosTreasureofAwakeningIII",
             "name": "Misko's Treasure of Awakening III",
             "link": "Misko's Treasure of Awakening III"
@@ -1474,7 +1474,7 @@
               -1268,
               -1445
             ],
-            "elv": "32",
+            "elv": 32,
             "id": "SQ-APictureforOutskirtStable",
             "name": "A Picture for Outskirt Stable",
             "link": "A Picture for Outskirt Stable"
@@ -1484,7 +1484,7 @@
               -1249,
               -1450
             ],
-            "elv": "32",
+            "elv": 32,
             "id": "SQ-TheHorseGuardsRequest",
             "name": "The Horse Guard's Request",
             "link": "The Horse Guard's Request"
@@ -1494,7 +1494,7 @@
               -2014,
               -1661
             ],
-            "elv": "-15",
+            "elv": -15,
             "id": "SQ-DisasterinGerudoCanyon",
             "name": "Disaster in Gerudo Canyon",
             "link": "Disaster in Gerudo Canyon"
@@ -1504,7 +1504,7 @@
               -2224,
               -2802
             ],
-            "elv": "29",
+            "elv": 29,
             "id": "SQ-PiaffePackedAway",
             "name": "Piaffe, Packed Away",
             "link": "Piaffe, Packed Away"
@@ -1514,7 +1514,7 @@
               -2221,
               -2808
             ],
-            "elv": "29",
+            "elv": 29,
             "id": "SQ-APicturefortheClosedStable",
             "name": "A Picture for the Closed Stable I\nA Picture for the Closed Stable II",
             "link": "Piaffe, Packed Away"
@@ -1524,7 +1524,7 @@
               -2277,
               -3754
             ],
-            "elv": "33",
+            "elv": 33,
             "id": "SQ-TheIcelessIcehouse",
             "name": "The Iceless Icehouse",
             "link": "The Iceless Icehouse"
@@ -1534,7 +1534,7 @@
               -2150,
               3408
             ],
-            "elv": "121",
+            "elv": 121,
             "id": "SQ-PhotographingaChuchu",
             "name": "Photographing a Chuchu",
             "link": "Photographing a Chuchu"
@@ -1544,7 +1544,7 @@
               -3438,
               -1795
             ],
-            "elv": "46",
+            "elv": 46,
             "id": "SQ-TheSouthLomeiProphecy",
             "name": "The South Lomei Prophecy",
             "link": "The South Lomei Prophecy"
@@ -1554,7 +1554,7 @@
               -3366,
               -1381
             ],
-            "elv": "469",
+            "elv": 469,
             "id": "SQ-Cold-EnduranceContest",
             "name": "Cold-Endurance Contest!",
             "link": "Cold-Endurance Contest!"
@@ -1580,7 +1580,7 @@
               1075,
               -1700
             ],
-            "elv": "199",
+            "elv": 199,
             "id": "SA-HestusConcerns",
             "name": "Hestu's Concerns",
             "link": "Hestu's Concerns"
@@ -1590,7 +1590,7 @@
               -2139,
               3357
             ],
-            "elv": "120",
+            "elv": 120,
             "id": "SA-TheMayoralElection",
             "name": "The Mayoral Election",
             "link": "The Mayoral Election"
@@ -1600,7 +1600,7 @@
               -2139,
               3357
             ],
-            "elv": "120",
+            "elv": 120,
             "id": "SA-CecesSecret",
             "name": "Cece's Secret",
             "link": "Cece's Secret"
@@ -1610,7 +1610,7 @@
               -2125,
               3354
             ],
-            "elv": "121",
+            "elv": 121,
             "id": "SA-TeamCeceorTeamReede",
             "name": "Team Cece or Team Reede?",
             "link": "Team Cece or Team Reede?"
@@ -1620,7 +1620,7 @@
               -2051,
               3632
             ],
-            "elv": "174",
+            "elv": 174,
             "id": "SA-ALettertoKoyin",
             "name": "A Letter to Koyin",
             "link": "A Letter to Koyin"
@@ -1630,7 +1630,7 @@
               -2092,
               3422
             ],
-            "elv": "130",
+            "elv": 130,
             "id": "SA-ReedesSecret",
             "name": "Reede's Secret",
             "link": "Reede's Secret"
@@ -1640,7 +1640,7 @@
               -2082,
               3429
             ],
-            "elv": "131",
+            "elv": 131,
             "id": "SA-ANewSignatureFood",
             "name": "A New Signature Food",
             "link": "A New Signature Food"
@@ -1650,7 +1650,7 @@
               756,
               -3648
             ],
-            "elv": "118",
+            "elv": 118,
             "id": "SA-TheHornistsDramaticEscape",
             "name": "The Hornist's Dramatic Escape",
             "link": "The Hornist's Dramatic Escape"
@@ -1660,7 +1660,7 @@
               1763,
               -3258
             ],
-            "elv": "119",
+            "elv": 119,
             "id": "SA-PotentialPrincessSightings",
             "name": "Potential Princess Sightings!",
             "link": "Potential Princess Sightings!"
@@ -1670,7 +1670,7 @@
               524,
               -2910
             ],
-            "elv": "169",
+            "elv": 169,
             "id": "SA-WhiteGoatsGoneMissing",
             "name": "White Goats Gone Missing",
             "link": "White Goats Gone Missing"
@@ -1680,7 +1680,7 @@
               2582,
               -1641
             ],
-            "elv": "233",
+            "elv": 233,
             "id": "SA-ZeldasGoldenHorse",
             "name": "Zelda's Golden Horse",
             "link": "Zelda's Golden Horse"
@@ -1690,7 +1690,7 @@
               734,
               -1348
             ],
-            "elv": "85",
+            "elv": 85,
             "id": "SA-TheBeastandthePrincess",
             "name": "The Beast and the Princess",
             "link": "The Beast and the Princess"
@@ -1700,7 +1700,7 @@
               135,
               -249
             ],
-            "elv": "18",
+            "elv": 18,
             "id": "SA-HatenoVillageResearchLab",
             "name": "Hateno Village Research Lab",
             "link": "Hateno Village Research Lab"
@@ -1710,7 +1710,7 @@
               107,
               -256
             ],
-            "elv": "8",
+            "elv": 8,
             "id": "SA-WhoGoesThere",
             "name": "Who Goes There?",
             "link": "Who Goes There?"
@@ -1720,7 +1720,7 @@
               157,
               -234
             ],
-            "elv": "4",
+            "elv": 4,
             "id": "SA-ADealWiththeStatue",
             "name": "A Deal With the Statue",
             "link": "A Deal With the Statue"
@@ -1730,7 +1730,7 @@
               66,
               -268
             ],
-            "elv": "18",
+            "elv": 18,
             "id": "SA-MessagesfromanAncientEra",
             "name": "Messages from an Ancient Era",
             "link": "Messages from an Ancient Era"
@@ -1740,7 +1740,7 @@
               -2123,
               3781
             ],
-            "elv": "251",
+            "elv": 251,
             "id": "SA-FillingOuttheCompendium",
             "name": "Filling Out the Compendium",
             "link": "Filling Out the Compendium"
@@ -1750,7 +1750,7 @@
               -2123,
               3781
             ],
-            "elv": "251",
+            "elv": 251,
             "id": "SA-Presenting",
             "name": "Presenting: The Travel Medallion!\nPresenting: Hero's Path Mode!\nPresenting: Sensor +!",
             "link": "Hateno Village Research Lab"
@@ -1760,7 +1760,7 @@
               -1295,
               -1413
             ],
-            "elv": "31",
+            "elv": 31,
             "id": "SA-TheBeckoningWoman",
             "name": "The Beckoning Woman",
             "link": "The Beckoning Woman"
@@ -1770,7 +1770,7 @@
               1716,
               3163
             ],
-            "elv": "201",
+            "elv": 201,
             "id": "SA-TheAllCluckingCucco",
             "name": "The All-Clucking Cucco",
             "link": "The All-Clucking Cucco"
@@ -1780,7 +1780,7 @@
               -3444,
               504
             ],
-            "elv": "47",
+            "elv": 47,
             "id": "SA-AnEerieVoice",
             "name": "An Eerie Voice",
             "link": "An Eerie Voice"
@@ -1790,7 +1790,7 @@
               -1925,
               1758
             ],
-            "elv": "40",
+            "elv": 40,
             "id": "SA-PrincessZeldaKidnapped",
             "name": "Princess Zelda Kidnapped",
             "link": "Princess Zelda Kidnapped"
@@ -1800,7 +1800,7 @@
               -1045,
               387
             ],
-            "elv": "15",
+            "elv": 15,
             "id": "SA-GourmetsGoneMissing",
             "name": "Gourmets Gone Missing",
             "link": "Gourmets Gone Missing"
@@ -1810,7 +1810,7 @@
               1154,
               2583
             ],
-            "elv": "148",
+            "elv": 148,
             "id": "SA-ForOurPrincess",
             "name": "For Our Princess!",
             "link": "For Our Princess!"
@@ -1820,7 +1820,7 @@
               -2235,
               -2817
             ],
-            "elv": "29",
+            "elv": 29,
             "id": "SA-TheBlockedWell",
             "name": "The Blocked Well",
             "link": "The Blocked Well"
@@ -1830,7 +1830,7 @@
               -159,
               876
             ],
-            "elv": "25",
+            "elv": 25,
             "id": "SA-TheMissingFarmTools",
             "name": "The Missing Farm Tools",
             "link": "The Missing Farm Tools"
@@ -1840,7 +1840,7 @@
               -1958,
               1755
             ],
-            "elv": "10",
+            "elv": 10,
             "id": "SA-SerenadeToCotera",
             "name": "Serenade To Cotera",
             "link": "Serenade To Cotera"
@@ -1850,7 +1850,7 @@
               -1264,
               -1406
             ],
-            "elv": "32",
+            "elv": 32,
             "id": "SA-SerenadetoKaysa",
             "name": "Serenade to Kaysa",
             "link": "Serenade to Kaysa"
@@ -1860,7 +1860,7 @@
               1149,
               1047
             ],
-            "elv": "22",
+            "elv": 22,
             "id": "SA-SerenadetoaGreatFairy",
             "name": "Serenade to a Great Fairy",
             "link": "Serenade to a Great Fairy"
@@ -1870,7 +1870,7 @@
               -3395,
               528
             ],
-            "elv": "56",
+            "elv": 56,
             "id": "SA-TheFlutePlayersPlan",
             "name": "The Flute Player's Plan",
             "link": "The Flute Player's Plan"
@@ -1880,7 +1880,7 @@
               -1380,
               2167
             ],
-            "elv": "109",
+            "elv": 109,
             "id": "SA-HoneyBeeMine",
             "name": "Honey, Bee Mine",
             "link": "Honey, Bee Mine"
@@ -1890,7 +1890,7 @@
               1207,
               1222
             ],
-            "elv": "20",
+            "elv": 20,
             "id": "SA-TheSearchforKoltin",
             "name": "The Search for Koltin",
             "link": "The Search for Koltin"
@@ -1900,7 +1900,7 @@
               1207,
               1222
             ],
-            "elv": "20",
+            "elv": 20,
             "id": "SA-TheHuntforBubbulGems",
             "name": "The Hunt for Bubbul Gems!",
             "link": "The Hunt for Bubbul Gems!"
@@ -1910,7 +1910,7 @@
               -2029,
               -823
             ],
-            "elv": "119",
+            "elv": 119,
             "id": "SA-ACallfromtheDepths",
             "name": "A Call from the Depths",
             "link": "A Call from the Depths"
@@ -1920,7 +1920,7 @@
               3095,
               373
             ],
-            "elv": "174",
+            "elv": 174,
             "id": "SA-InvestigatetheThyphloRuins",
             "name": "Investigate the Thyphlo Ruins\nThe Owl Protected by Dragons\nThe Corridor between Two Dragons\nThe Long Dragon\nThe Six Dragons",
             "link": "Investigate the Thyphlo Ruins"
@@ -1930,7 +1930,7 @@
               2589,
               -1630
             ],
-            "elv": "234",
+            "elv": 234,
             "id": "SA-SerenadetoMija",
             "name": "Serenade to Mija",
             "link": "Serenade to Mija"
@@ -1940,7 +1940,7 @@
               -490,
               -433
             ],
-            "elv": "25",
+            "elv": 25,
             "id": "SA-BringPeacetoHyruleField",
             "name": "Bring Peace to Hyrule Field!",
             "link": "Bring Peace to Hyrule Field!"
@@ -1950,7 +1950,7 @@
               -1838,
               2261
             ],
-            "elv": "11",
+            "elv": 11,
             "id": "SA-BringPeacetoNecluda",
             "name": "Bring Peace to Necluda!",
             "link": "Bring Peace to Necluda!"
@@ -1960,7 +1960,7 @@
               3059,
               2369
             ],
-            "elv": "448",
+            "elv": 448,
             "id": "SA-BringPeacetoEldin",
             "name": "Bring Peace to Eldin!",
             "link": "Bring Peace to Eldin!"
@@ -1970,7 +1970,7 @@
               1126,
               3005
             ],
-            "elv": "281",
+            "elv": 281,
             "id": "SA-BringPeacetoAkkala",
             "name": "Bring Peace to Akkala!",
             "link": "Bring Peace to Akkala!"
@@ -1996,7 +1996,7 @@
               2790,
               -979
             ],
-            "elv": "-92",
+            "elv": -92,
             "id": "MQ008-01",
             "name": "The Dragon's Tears",
             "link": "The Dragon's Tears"
@@ -2006,7 +2006,7 @@
               3380,
               -1818
             ],
-            "elv": "236",
+            "elv": 236,
             "id": "GoldenHorse",
             "name": "Zelda's Golden Horse",
             "link": "Zelda's Golden Horse"
@@ -2016,7 +2016,7 @@
               2705,
               -3145
             ],
-            "elv": "568",
+            "elv": 568,
             "id": "TulinMQ",
             "name": "Tulin of Rito Village",
             "link": "Tulin of Rito Village"
@@ -2026,7 +2026,7 @@
               -3719,
               804
             ],
-            "elv": "81",
+            "elv": 81,
             "id": "RideTheGiantHorseSQ",
             "name": "Giant White Horse",
             "link": "Giant White Horse"
@@ -2036,7 +2036,7 @@
               -3363,
               1538
             ],
-            "elv": "58",
+            "elv": 58,
             "id": "TheBeastAndPrincess",
             "name": "The Beast",
             "link": "The beast"
@@ -2046,7 +2046,7 @@
               -1540,
               -585
             ],
-            "elv": "27",
+            "elv": 27,
             "id": "CallFromTheDepths",
             "name": "Mysterious Voice",
             "link": "Mysterious Voice"
@@ -2056,7 +2056,7 @@
               3181,
               185
             ],
-            "elv": "174",
+            "elv": 174,
             "id": "TheSixDragons",
             "name": "The Six Dragons",
             "link": "The Six Dragons"
@@ -2066,7 +2066,7 @@
               3084,
               466
             ],
-            "elv": "175",
+            "elv": 175,
             "id": "TheLongDragon",
             "name": "The Long Dragon",
             "link": "The Long Dragon"
@@ -2076,7 +2076,7 @@
               -43,
               -332
             ],
-            "elv": "23",
+            "elv": 23,
             "id": "Spot",
             "name": "Spotting Spot",
             "link": "Spotting Spot"
@@ -2086,7 +2086,7 @@
               1329,
               1931
             ],
-            "elv": "136",
+            "elv": 136,
             "id": "MoonShiningDown",
             "name": "Moon-Gazing Gorons",
             "link": "Moon-Gazing Gorons"
@@ -2096,7 +2096,7 @@
               -903,
               1738
             ],
-            "elv": "199",
+            "elv": 199,
             "id": "KakarikoInnOwner",
             "name": "Out of the Inn",
             "link": "Out of the Inn"
@@ -2106,7 +2106,7 @@
               -1173,
               1631
             ],
-            "elv": "218",
+            "elv": 218,
             "id": "NestledRingRuin",
             "name": "A Trip through History",
             "link": "A Trip through History"
@@ -2116,7 +2116,7 @@
               -1085,
               1935
             ],
-            "elv": "166",
+            "elv": 166,
             "id": "SouthernRingRuin",
             "name": "A Trip through History",
             "link": "A Trip through History"
@@ -2126,7 +2126,7 @@
               -809,
               1899
             ],
-            "elv": "199",
+            "elv": 199,
             "id": "EasternRingRuin",
             "name": "A Trip through History",
             "link": "A Trip through History"
@@ -2136,7 +2136,7 @@
               -902,
               1733
             ],
-            "elv": "199",
+            "elv": 199,
             "id": "LargeRingRuin",
             "name": "A Trip through History",
             "link": "A Trip through History"
@@ -2146,7 +2146,7 @@
               -2355,
               -1895
             ],
-            "elv": "-1",
+            "elv": -1,
             "id": "Giro",
             "name": "Disaster in Gerudo Canyon",
             "link": "Disaster in Gerudo Canyon"
@@ -2156,7 +2156,7 @@
               -2997,
               -3890
             ],
-            "elv": "33",
+            "elv": 33,
             "id": "SevenHeroinesMonument1",
             "name": "The Heroines' Secret",
             "link": "The Heroines' Secret"
@@ -2166,7 +2166,7 @@
               -3149,
               -4057
             ],
-            "elv": "61",
+            "elv": 61,
             "id": "1stMirrorPillar",
             "name": "Riju of Gerudo Town",
             "link": "Riju of Gerudo Town"
@@ -2176,7 +2176,7 @@
               -3276,
               -4595
             ],
-            "elv": "46",
+            "elv": 46,
             "id": "2ndMirrorPillar",
             "name": "Riju of Gerudo Town",
             "link": "Riju of Gerudo Town"
@@ -2186,7 +2186,7 @@
               -3630,
               -4186
             ],
-            "elv": "87",
+            "elv": 87,
             "id": "3rdMirrorPillar",
             "name": "Riju of Gerudo Town",
             "link": "Riju of Gerudo Town"

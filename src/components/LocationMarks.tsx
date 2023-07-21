@@ -1,12 +1,7 @@
 import L from 'leaflet'
-import { Marker, Popup } from 'react-leaflet'
-import sky from '@/assets/json/sky/locations.json'
-import { LayerType, LocationType, MarkerType, IconType } from '@/types'
-
-type LocationMarksProps = {
-  zoom: number;
-  selectItems: Set<string>;
-};
+import { Marker, Popup, Polyline } from 'react-leaflet'
+import { locations, quests } from '@/constants/json'
+import { LayerType, LocationType, MarkerType, IconType, LayoutType } from '@/types'
 
 interface FilterLayerType extends LayerType {
   location: string
@@ -37,15 +32,18 @@ function LoaclMarker({ marker, icon, location }: { marker: MarkerType; icon: Ico
           <span>{Math.floor(marker.elv)}</span>
         </div>
       </Popup>
+      {/* (      <Polyline
+        positions={}
+        pathOptions={{ color: 'red' }} />) */}
     </Marker>
   )
 }
 
 // Math
-function filterLocation(locations: LocationType[], selectItems:Set<string>, zoom: number) {
+function filterMarker(date: LocationType[], selectItems:Set<string>, zoom: number) {
   const arr:FilterLayerType[] = []
   if (selectItems.has('all')) {
-    locations.forEach((location) => {
+    date.forEach((location) => {
       location.layers.forEach((layer) => {
         const condition1 = !layer.maxZoom && !layer.minZoom
         const condition2 = (layer?.maxZoom ?? 6) >= zoom - 2 && zoom - 2 >= (layer.minZoom ?? 0)
@@ -53,7 +51,7 @@ function filterLocation(locations: LocationType[], selectItems:Set<string>, zoom
       })
     })
   } else {
-    locations.forEach((location) => {
+    date.forEach((location) => {
       if (!selectItems.has(location.name)) return
       location.layers.forEach((layer) => {
         arr.push({ location: location.name, ...layer })
@@ -63,9 +61,13 @@ function filterLocation(locations: LocationType[], selectItems:Set<string>, zoom
   return arr
 }
 
-export default function SkyMarks(props: LocationMarksProps) {
-  const { zoom, selectItems } = props
-  const layers: FilterLayerType[] = filterLocation(sky, selectItems, zoom)
+export default function SkyMarks(props: {
+  zoom: number;
+  layout: LayoutType;
+  selectItems: Set<string>;
+}) {
+  const { zoom, layout, selectItems } = props
+  const layers: FilterLayerType[] = filterMarker([...locations[layout], ...quests[layout]], selectItems, zoom)
 
   return (
     <div>

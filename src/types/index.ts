@@ -7,6 +7,7 @@ export interface MarkerType {
   id: string;
   name?: string;
   link?: string;
+  path?:[ number[], number[]]
   // zoomAdjustedCoords?: {
   //   [key: any]: number[]
   // }
@@ -19,16 +20,16 @@ export interface IconType {
 }
 
 export interface LayerType {
+  markers: MarkerType[]
+  icon: IconType,
   minZoom?: number,
   maxZoom?: number,
   showLabelForZoomLevel?: number
-  icon: IconType,
-  markers: MarkerType[]
 }
 
 export interface LocationType {
   name: string,
+  layers: LayerType[]
   link?: string;
   source?: string,
-  layers: LayerType[]
 }

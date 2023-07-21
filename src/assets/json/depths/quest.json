@@ -16,27 +16,12 @@
               -3363,
               1348
             ],
-            "elv": "-736",
+            "elv": -736,
             "id": "MQ-TrailoftheMasterSword",
             "name": "Trail of the Master Sword",
             "link": "Trail of the Master Sword"
           }
         ]
-      }
-    ]
-  },
-  {
-    "name": "Shrine Quest",
-    "source": "mapns",
-    "layers": [
-      {
-        "minZoom": 4,
-        "icon": {
-          "url": "shrinequest.png",
-          "width": 25,
-          "height": 29
-        },
-        "markers": []
       }
     ]
   },
@@ -57,7 +42,7 @@
               -3363,
               1335
             ],
-            "elv": "-737",
+            "elv": -737,
             "id": "SQ-AncientBladesBelow",
             "name": "Ancient Blades Below",
             "link": "Ancient Blades Below"
@@ -83,27 +68,12 @@
               -1928,
               -803
             ],
-            "elv": "-520",
+            "elv": -520,
             "id": "SA-MasterKohgaoftheYigaClan",
             "name": "Master Kohga of the Yiga Clan",
             "link": "Master Kohga of the Yiga Clan"
           }
         ]
-      }
-    ]
-  },
-  {
-    "name": "Memory",
-    "source": "summary",
-    "layers": [
-      {
-        "minZoom": 4,
-        "icon": {
-          "url": "memory.png",
-          "width": 25,
-          "height": 23
-        },
-        "markers": []
       }
     ]
   },
@@ -124,7 +94,7 @@
               -451,
               -803
             ],
-            "elv": "-470",
+            "elv": -470,
             "id": "MQ006-01",
             "name": "Camera Work in the Depths",
             "link": "Camera Work in the Depths"

@@ -9,7 +9,7 @@ import { MapEvent,
   LayerControl,
   ZoomControl,
   PlaceNameMarks,
-  SkyMarks } from '@/constants/component'
+  LocationMarks } from '@/constants/component'
 
 import type { LayoutType } from '@/types'
 
@@ -52,7 +52,6 @@ export default function Map() {
   }, [layout])
 
   return (
-    // maxBounds={bounds} 地圖會回到中心
     <div className="relative z-0 h-[calc(100vh-48px)]">
       {/* 控制面板 */}
       <div className="leaflet-top leaflet-left h-full">
@@ -69,7 +68,7 @@ export default function Map() {
         </div>
       </div>
 
-      {/* 地圖 */}
+      {/* 地圖  'maxBounds={bounds} 地圖會回到中心' */}
       <MapContainer
         id="map"
         crs={zeldaCRS}
@@ -90,10 +89,11 @@ export default function Map() {
           zoom={zoom}
           layout={layout} />
 
-        {(selectItems.size === 0 || layout === 'sky') && (
-        <SkyMarks
+        {!(selectItems.size === 0) && (
+        <LocationMarks
           selectItems={selectItems}
-          zoom={zoom} />
+          zoom={zoom}
+          layout={layout} />
         )}
 
         {/* 事件控制 */}

@@ -22,6 +22,7 @@ function LoaclMarker({ marker, icon, location }: { marker: MarkerType; icon: Ico
           className: icon.url.replaceAll('.', '_')
         })
       }>
+
       <Popup>
         <div>{t(marker.name ?? location, { ns: 'totk' })}</div>
         <div>
@@ -32,9 +33,12 @@ function LoaclMarker({ marker, icon, location }: { marker: MarkerType; icon: Ico
           <span>{Math.floor(marker.elv)}</span>
         </div>
       </Popup>
-      {/* (      <Polyline
-        positions={}
-        pathOptions={{ color: 'red' }} />) */}
+
+      {!!(marker.path) && (
+      <Polyline
+        positions={[[marker.path[0][0], marker.path[0][1]], [marker.path[1][0], marker.path[1][1]]]}
+        pathOptions={{ color: 'white' }} />
+      )}
     </Marker>
   )
 }

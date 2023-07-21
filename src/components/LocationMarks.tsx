@@ -1,4 +1,5 @@
 import L from 'leaflet'
+import { useLocalStorage } from 'react-use'
 import { Marker, Popup, Polyline } from 'react-leaflet'
 import { locations, quests } from '@/constants/json'
 import { LayerType, LocationType, MarkerType, IconType, LayoutType } from '@/types'
@@ -10,7 +11,6 @@ interface FilterLayerType extends LayerType {
 // component
 function LoaclMarker({ marker, icon, location }: { marker: MarkerType; icon: IconType; location:string}) {
   const { t } = useTranslation()
-
   return (
     <Marker
       key={marker.id}
@@ -35,7 +35,16 @@ function LoaclMarker({ marker, icon, location }: { marker: MarkerType; icon: Ico
             <span>{Math.floor(marker.elv)}</span>
           </div>
           <div
-            className="fill-gray-300 text-center cursor-pointer">
+            className="fill-gray-300 text-center cursor-pointer"
+            onClick={() => {
+              const myArrayString = localStorage.getItem('myArray')
+              if (!myArrayString) {
+                localStorage.setItem('myArray', JSON.stringify([marker.id]))
+              } else {
+                const arr = JSON.parse(myArrayString)
+                localStorage.setItem('myArray', JSON.stringify([...arr, marker.id]))
+              }
+            }}>
             <svg
               width="24"
               height="24"

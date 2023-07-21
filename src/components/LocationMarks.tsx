@@ -9,7 +9,8 @@ interface FilterLayerType extends LayerType {
 
 // component
 function LoaclMarker({ marker, icon, location }: { marker: MarkerType; icon: IconType; location:string}) {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  // console.log(i18n)
   return (
     <Marker
       key={marker.id}
@@ -24,13 +25,25 @@ function LoaclMarker({ marker, icon, location }: { marker: MarkerType; icon: Ico
       }>
 
       <Popup>
-        <div>{t(marker.name ?? location, { ns: 'totk' })}</div>
-        <div>
-          <span>{Math.floor(marker.coords[0])}</span>
-          {' '}
-          <span>{Math.floor(marker.coords[1])}</span>
-          {' '}
-          <span>{Math.floor(marker.elv)}</span>
+        <div className="flex flex-col items-center">
+          <div className="text-base font-semibold mb-1.5">{t(marker.name ?? location, { ns: 'totk' })}</div>
+          <div className="text-sm mb-2">
+            <span>{Math.floor(marker.coords[0])}</span>
+            {' , '}
+            <span>{Math.floor(marker.coords[1])}</span>
+            {' , '}
+            <span>{Math.floor(marker.elv)}</span>
+          </div>
+          <div
+            className="fill-gray-300 text-center cursor-pointer">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24">
+              <path
+                d="M21.855 10.303c.086.554.145 1.118.145 1.697 0 6.075-4.925 11-11 11s-11-4.925-11-11 4.925-11 11-11c2.348 0 4.518.741 6.304 1.993l-1.421 1.457c-1.408-.913-3.083-1.45-4.883-1.45-4.963 0-9 4.038-9 9s4.037 9 9 9c4.894 0 8.879-3.928 8.99-8.795l1.865-1.902zm-.951-8.136l-9.404 9.639-3.843-3.614-3.095 3.098 6.938 6.71 12.5-12.737-3.096-3.096z" />
+            </svg>
+          </div>
         </div>
       </Popup>
 

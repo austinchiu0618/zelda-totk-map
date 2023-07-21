@@ -66,7 +66,12 @@
 
 .village_png {}
 
-.chasm_png {}
+.building_png {}
+
+.chasm_png {
+  background-color: red;
+  border-radius: 100%;
+}
 
 /* Services */
 
@@ -85,10 +90,7 @@
 
 .horsegod_png {}
 
-.battery_png {
-  /* background-color: black;
-  border-radius: 8px; */
-}
+.battery_png {}
 
 .general_png {}
 
@@ -99,8 +101,6 @@
 .monster_png {}
 
 .statue_png {}
-
-.building_png {}
 
 .jewelry_png {}
 

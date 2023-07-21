@@ -76,7 +76,6 @@ export default function Map() {
         zoom={zoom}
         zoomControl={false}
         attributionControl={false}
-        maxBounds={bounds}
         minZoom={2}
         maxZoom={8}>
         <TileLayer

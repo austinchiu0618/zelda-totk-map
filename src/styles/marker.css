@@ -1,4 +1,7 @@
 /* Location Marker */
+.isSelected {
+  opacity: 0.4;
+}
 
 /* Travel Gates */
 .tower_png {}

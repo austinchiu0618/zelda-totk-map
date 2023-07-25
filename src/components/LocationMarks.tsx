@@ -8,9 +8,14 @@ interface FilterLayerType extends LayerType {
   location: string
 }
 
+const local = localStorage.getItem('selectedMarker')
+const localData:Set<string> = local ? new Set(JSON.parse(local)) : new Set()
+
 // component
 function LoaclMarker({ marker, icon, location }: { marker: MarkerType; icon: IconType; location:string}) {
   const { t } = useTranslation()
+  const [isSelected, setIsSelected] = useState<boolean>(localData.has(marker.id))
+
   return (
     <Marker
       key={marker.id}
@@ -20,7 +25,7 @@ function LoaclMarker({ marker, icon, location }: { marker: MarkerType; icon: Ico
           iconUrl: `src/assets/icons/${icon.url}`,
           iconSize: [icon.width, icon.height],
           iconAnchor: [icon.width / 2, icon.height / 2],
-          className: icon.url.replaceAll('.', '_')
+          className: `${icon.url.replaceAll('.', '_')} ${isSelected && 'isSelected'}`
         })
       }>
 
@@ -35,15 +40,20 @@ function LoaclMarker({ marker, icon, location }: { marker: MarkerType; icon: Ico
             <span>{Math.floor(marker.elv)}</span>
           </div>
           <div
-            className="fill-gray-300 text-center cursor-pointer"
+            className={`text-center cursor-pointer ${
+              isSelected ? 'fill-black' : 'fill-gray-300'
+            }`}
             onClick={() => {
-              const myArrayString = localStorage.getItem('myArray')
-              if (!myArrayString) {
-                localStorage.setItem('myArray', JSON.stringify([marker.id]))
+              const newLocal = localStorage.getItem('selectedMarker')
+              const newLocalData:Set<string> = newLocal ? new Set(JSON.parse(newLocal)) : new Set()
+              if (!isSelected) {
+                newLocalData.add(marker.id)
+                setIsSelected(!isSelected)
               } else {
-                const arr = JSON.parse(myArrayString)
-                localStorage.setItem('myArray', JSON.stringify([...arr, marker.id]))
+                newLocalData.delete(marker.id)
+                setIsSelected(!isSelected)
               }
+              localStorage.setItem('selectedMarker', JSON.stringify(Array.from(newLocalData)))
             }}>
             <svg
               width="24"

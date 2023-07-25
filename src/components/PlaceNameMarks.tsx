@@ -22,7 +22,7 @@ export default function PlaceNameMarks(props: LocationMarksProps) {
 
   return (
     <div>
-      {placeName[layout].layers && placeName[layout].layers.flatMap((layer) => {
+      {placeName[layout].layers.flatMap((layer) => {
         const condition = (layer.maxZoom ?? 6) >= zoom - 2 && zoom - 2 >= (layer.minZoom ?? 0)
         if (condition) return layer.markers
         return []

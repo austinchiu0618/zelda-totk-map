@@ -1,22 +1,24 @@
 import categoryJson from '@/assets/json/category.json'
 
-type PropsType = {
+type FilterContorlProps = {
   selectItems: Set<string>;
   setSelectItems: React.Dispatch<React.SetStateAction<Set<string>>>;
 };
 
 const categories = categoryJson
 
-export default function FilterContorl(props: PropsType) {
-  const { selectItems, setSelectItems } = props
-  const [isShowFilter, setIsShowFilter] = useState(true)
-
+function CategoryGroup(props: {
+  category: { name: string; items: { name: string; icon: string }[] };
+  filterProp: FilterContorlProps;
+}) {
+  const { category, filterProp } = props
   const { t, i18n } = useTranslation()
-
   const lang = i18n.language
 
+  const [isShow, setIsShow] = useState(false)
+
   const selectHandle = (name: string) => {
-    setSelectItems((prev) => {
+    filterProp.setSelectItems((prev) => {
       if (prev.has('all')) prev.clear()
       const next = new Set(prev)
       if (next.has(name)) {
@@ -28,6 +30,58 @@ export default function FilterContorl(props: PropsType) {
       return next
     })
   }
+
+  return (
+    <div className="flex flex-col space-y-2">
+      <div
+        onClick={() => {
+          setIsShow(!isShow)
+        }}
+        className="flex cursor-pointer items-center justify-between px-2 text-xl text-yellow">
+        <span>{t(category.name, { ns: 'totk' })}</span>
+        <img
+          className={`mr-2 ${!isShow && 'rotate-180'}`}
+          src="src/assets/image/arrow.svg"
+          alt="arrow" />
+      </div>
+
+      <div
+        className={`grid grid-cols-2 gap-0.5 overflow-hidden text-base text-white transition-[height] ease-in-out duration-300 ${
+          isShow ? 'h-0' : 'h-full'
+        }`}>
+        {category.items.map((item) => (
+          <div
+            key={item.name}
+            className={`flex cursor-pointer items-center space-x-2 py-2 pl-2 ${
+              (filterProp.selectItems.has(item.name) || filterProp.selectItems.has('all'))
+              && 'bg-white/10'
+            }`}
+            onClick={() => {
+              selectHandle(item.name)
+            }}>
+            <img
+              className="h-[28px] w-[28px]"
+              src={`src/assets/icons/${item.icon}`}
+              alt="icon" />
+            <span
+              className={`${
+                lang === 'ja' && t(item.name, { ns: 'totk' }).length > 7 && 'text-[13px]'
+              } ${lang === 'en' && t(item.name, { ns: 'totk' }).length > 15 && 'text-[15px]'}`}>
+              {t(item.name, { ns: 'totk' })}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default function FilterContorl(props: FilterContorlProps) {
+  const { selectItems, setSelectItems } = props
+  const [isShowFilter, setIsShowFilter] = useState(true)
+
+  const { t } = useTranslation()
+
   const selectAllHandle = () => {
     setSelectItems((prev) => {
       prev.clear()
@@ -86,38 +140,10 @@ export default function FilterContorl(props: PropsType) {
 
         <div className="no-bar flex h-[calc(100vh-48px-68px)] flex-1 flex-col space-y-6 overflow-y-scroll px-3 pb-10">
           {categories.map((category) => (
-            <div
+            <CategoryGroup
               key={category.name}
-              className="flex flex-col space-y-2">
-              <div className="cursor-default text-xl text-yellow">
-                {t(category.name, { ns: 'totk' })}
-              </div>
-
-              <div className="grid grid-cols-2 gap-0.5 text-base text-white">
-                {category.items.map((item) => (
-                  <div
-                    key={item.name}
-                    className={`flex cursor-pointer items-center space-x-2 pl-2 py-2 ${
-                      (selectItems.has(item.name) || selectItems.has('all')) && 'bg-white/10'
-                    }`}
-                    onClick={() => {
-                      selectHandle(item.name)
-                    }}>
-                    <img
-                      className="h-[28px] w-[28px]"
-                      src={`src/assets/icons/${item.icon}`}
-                      alt="icon" />
-                    <span className={`${
-                      (lang === 'ja' && t(item.name, { ns: 'totk' }).length > 7) && 'text-[13px]'
-                    } ${
-                      (lang === 'en' && t(item.name, { ns: 'totk' }).length > 15) && 'text-[15px]'
-                    }`}>
-                      {t(item.name, { ns: 'totk' })}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
+              category={category}
+              filterProp={props} />
           ))}
         </div>
       </div>

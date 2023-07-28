@@ -1,11 +1,9 @@
 import { Dropdown, ToggleSwitch, Flowbite } from 'flowbite-react'
 import type { CustomFlowbiteTheme } from 'flowbite-react'
 
-const customTheme: CustomFlowbiteTheme = { toggleSwitch: {
-  toggle: {
-    base: 'toggle-bg h-6 w-11 rounded-full border'
-  }
-} }
+const customTheme: CustomFlowbiteTheme = { toggleSwitch: { toggle: {
+  base: 'toggle-bg h-6 w-11 rounded-full border'
+} } }
 
 function LanguageItem({ item }:{item:{id:string, name:string}}) {
   const { i18n } = useTranslation()

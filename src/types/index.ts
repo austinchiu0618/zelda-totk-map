@@ -7,7 +7,7 @@ export interface MarkerType {
   id: string;
   name?: string;
   link?: string;
-  path?:[ number[], number[]]
+  path?: number[][];
   // zoomAdjustedCoords?: {
   //   [key: any]: number[]
   // }

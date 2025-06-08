@@ -22,7 +22,7 @@ function LoaclMarker({ marker, icon, location }: { marker: MarkerType; icon: Ico
       position={[marker.coords[0], marker.coords[1]]}
       icon={
         new L.Icon({
-          iconUrl: `src/assets/icons/${icon.url}`,
+          iconUrl: `/assets/icons/${icon.url}`,
           iconSize: [icon.width, icon.height],
           iconAnchor: [icon.width / 2, icon.height / 2],
           className: `${icon.url.replaceAll('.', '_')} ${isSelected && 'isSelected'}`

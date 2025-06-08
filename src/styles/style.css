@@ -28,7 +28,7 @@
   width: 100%;
   height: 100%;
   opacity: 0.1;
-  background-image: url("src/assets/image/zelda_bg.png");
+  background-image: url("/assets/image/zelda_bg.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -49,7 +49,7 @@
 }
 
 .zelda-bg {
-  background-image: url('../assets/image/bg.png');
+  background-image: url('/assets/image/bg.png');
   /* background-size: 140%; */
 }
 

@@ -34,7 +34,7 @@ export default function Navbar() {
       <div className="title flex items-center space-x-4 text-xl font-semibold text-yellow-light ">
         <img
           className="w-12"
-          src="src/assets/image/zelda.png"
+          src="/assets/image/zelda.png"
           alt="zelda" />
         <span>{t('Zelda', { ns: 'common' })}</span>
         <span>{t('Tears of the Kingdom', { ns: 'common' })}</span>
@@ -50,7 +50,7 @@ export default function Navbar() {
               <div>
                 <img
                   className="h-6 cursor-pointer"
-                  src="src/assets/image/tool.svg"
+                  src="/assets/image/tool.svg"
                   alt="" />
               </div>
             )}>
@@ -84,7 +84,7 @@ export default function Navbar() {
               <div className="w-[120px] flex items-center space-x-2 cursor-pointer">
                 <img
                   className="h-6"
-                  src="src/assets/image/language.svg"
+                  src="/assets/image/language.svg"
                   alt="language" />
                 <span>{languageItems[i18n.language].name}</span>
               </div>

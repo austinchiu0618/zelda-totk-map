@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Main Quest",
+    "source": "mapns",
+    "layers": [
+      {
+        "minZoom": 4,
+        "icon": {
+          "url": "mainquest.png",
+          "width": 42,
+          "height": 25
+        },
+        "markers": [
+          {
+            "coords": [
+              -3363,
+              1348
+            ],
+            "elv": -736,
+            "id": "MQ-TrailoftheMasterSword",
+            "name": "Trail of the Master Sword",
+            "link": "Trail of the Master Sword"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Side Quest",
+    "source": "mapns",
+    "layers": [
+      {
+        "minZoom": 4,
+        "icon": {
+          "url": "sidequest.png",
+          "width": 27,
+          "height": 21
+        },
+        "markers": [
+          {
+            "coords": [
+              -3363,
+              1335
+            ],
+            "elv": -737,
+            "id": "SQ-AncientBladesBelow",
+            "name": "Ancient Blades Below",
+            "link": "Ancient Blades Below"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Side Adventure",
+    "source": "mapns",
+    "layers": [
+      {
+        "minZoom": 4,
+        "icon": {
+          "url": "adventure.png",
+          "width": 20,
+          "height": 24
+        },
+        "markers": [
+          {
+            "coords": [
+              -1928,
+              -803
+            ],
+            "elv": -520,
+            "id": "SA-MasterKohgaoftheYigaClan",
+            "name": "Master Kohga of the Yiga Clan",
+            "link": "Master Kohga of the Yiga Clan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Quest Objective",
+    "source": "mapns",
+    "layers": [
+      {
+        "minZoom": 4,
+        "icon": {
+          "url": "objective.png",
+          "width": 13,
+          "height": 13
+        },
+        "markers": [
+          {
+            "coords": [
+              -451,
+              -803
+            ],
+            "elv": -470,
+            "id": "MQ006-01",
+            "name": "Camera Work in the Depths",
+            "link": "Camera Work in the Depths"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -41,7 +41,7 @@ function CategoryGroup(props: {
         <span>{t(category.name, { ns: 'totk' })}</span>
         <img
           className={`mr-2 ${!isShow && 'rotate-180'}`}
-          src="src/assets/image/arrow.svg"
+          src="/assets/image/arrow.svg"
           alt="arrow" />
       </div>
 
@@ -61,7 +61,7 @@ function CategoryGroup(props: {
             }}>
             <img
               className="h-[28px] w-[28px]"
-              src={`src/assets/icons/${item.icon}`}
+              src={`/assets/icons/${item.icon}`}
               alt="icon" />
             <span
               className={`${

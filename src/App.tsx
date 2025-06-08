@@ -8,7 +8,7 @@ const router = createBrowserRouter([
   }
 ],
 {
-    basename: '/zelda-totk-map' // <--- 加這行！對應到你的 vite.config.ts 中的 base
+    basename: '/zelda-totk-map/' // <--- 加這行！對應到你的 vite.config.ts 中的 base
 })
 
 export default function App() {

@@ -1,0 +1,169 @@
+/* Location Marker */
+.isSelected {
+  opacity: 0.4;
+}
+
+/* Travel Gates */
+.tower_png {}
+
+.windtemple_png, .watertemple_png,
+.lightningtemple_png, .firetemple_png,
+.spirittemple_png {
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.castle_png {}
+
+.shrine_png {
+  background-color: #000;
+  border-radius: 100%;
+  /* padding: 1px !important; */
+}
+
+.lightroot_png {}
+
+.lab_png {}
+
+.start_png {}
+
+/* Quests */
+
+.mainquest_png {}
+
+.adventure_png {}
+
+.shrinequest_png {}
+
+.sidequest_png {}
+
+.objective_png {}
+
+.tear_png {}
+
+.relief_png {}
+
+/* Collectibles */
+
+.korok_png {}
+
+.korok2_png {}
+
+.treasure_png {}
+
+.treasurearmor_png {}
+
+.treasureweapon_png {}
+
+.sageswill_png {}
+
+.oldmap_png{}
+
+.schematic_png {}
+
+/* Locations */
+
+.cave_png {}
+
+.well_png {}
+
+.village_png {}
+
+.building_png {}
+
+.chasm_png {
+  background-color: red;
+  border-radius: 100%;
+}
+
+/* Services */
+
+.dispenser_png {
+  background-color: #247266;
+  border-radius: 100%;
+}
+
+.stable_png {}
+
+.pot_png {}
+
+.inn_png {}
+
+.fountain_png {}
+
+.horsegod_png {}
+
+.battery_png {}
+
+.general_png {}
+
+.armor_png {}
+
+.bargainer_png {}
+
+.monster_png {}
+
+.statue_png {}
+
+.jewelry_png {}
+
+.dye_png {}
+
+.bar_png {}
+
+.cook_png {}
+
+.school_png {}
+
+.milk_png {}
+
+.survey_png {}
+
+.shopetc_png {}
+
+.shoptreasure_png {}
+
+.newspaper_png {}
+
+.house_png {}
+
+/* Other */
+
+.cherry-blossom_png {}
+
+.hudsonsign_png {}
+
+.minigame_png {}
+
+/* Bosses */
+
+.square_png {}
+
+.frox_png {}
+
+.hinox_png {}
+
+.ore_png {}
+
+.gleeok_png {}
+
+.molduga_png {}
+
+.lynel_png {}
+
+.hand-solid_png {}
+
+.skull.png {}
+
+
+
+
+
+
+
+
+
+
+
+
+

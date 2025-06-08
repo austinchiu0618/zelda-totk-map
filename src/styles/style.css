@@ -1,0 +1,57 @@
+@import './leaflet.css';
+@import './marker.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.no-bar::-webkit-scrollbar{
+  display: none;
+  width: 0 !important
+}
+
+#map {
+  width: 100vw;
+  height: 100%;
+  background-color: #000;
+}
+
+#map:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background-image: url("src/assets/image/zelda_bg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.icon-button { 
+  @apply h-14 w-14 p-2.5 cursor-pointer hover:bg-white/30
+}
+
+
+.navbar {
+  background: linear-gradient(270deg,#60b7c7,#227483);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  text-shadow: -1px 0 #91793e, 0 1px #91793e, 1px 0 #91793e, 0 -1px #91793e;
+}
+
+.zelda-bg {
+  background-image: url('../assets/image/bg.png');
+  /* background-size: 140%; */
+}
+
+
+

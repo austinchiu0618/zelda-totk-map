@@ -3,7 +3,12 @@ import { useLocalStorage } from 'react-use'
 import { Marker, Popup, Polyline } from 'react-leaflet'
 import { locations, quests } from '@/constants/json'
 import { LayerType, LocationType, MarkerType, IconType, LayoutType } from '@/types'
+import icon from '@/constants/icon'
 
+const getIcon = (name: string) => {
+  const iconName = name.replace('.png', '')
+  return icon[iconName as keyof typeof icon] || ''
+}
 interface FilterLayerType extends LayerType {
   location: string
 }
@@ -22,7 +27,7 @@ function LoaclMarker({ marker, icon, location }: { marker: MarkerType; icon: Ico
       position={[marker.coords[0], marker.coords[1]]}
       icon={
         new L.Icon({
-          iconUrl: `/assets/icons/${icon.url}`,
+          iconUrl: getIcon(icon.url),
           iconSize: [icon.width, icon.height],
           iconAnchor: [icon.width / 2, icon.height / 2],
           className: `${icon.url.replaceAll('.', '_')} ${isSelected && 'isSelected'}`

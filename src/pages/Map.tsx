@@ -17,7 +17,6 @@ const ratio = 3 / 256
 const southWest = new L.LatLng(lat / 2 / ratio, lng / 2 / ratio)
 const northEast = new L.LatLng(-(lat / 2) / ratio, -(lng / 2) / ratio)
 const bounds = new L.LatLngBounds(southWest, northEast)
-// const tileUrl = 'https://raw.githubusercontent.com/Slluxx/TOTK-Interactive-Map/tiles/assets/tiles'
 // const tileUrl = 'src/assets/tiles'
 const tileUrl = 'https://raw.githubusercontent.com/austinchiu0618/zelda-totk-map-tiles/main'
 

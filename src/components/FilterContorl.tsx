@@ -1,4 +1,11 @@
 import categoryJson from '@/assets/json/category.json'
+import image from '@/constants/image'
+import icon from '@/constants/icon'
+
+const getIcon = (name: string) => {
+  const iconName = name.replace('.png', '')
+  return icon[iconName as keyof typeof icon] || ''
+}
 
 type FilterContorlProps = {
   selectItems: Set<string>;
@@ -41,7 +48,7 @@ function CategoryGroup(props: {
         <span>{t(category.name, { ns: 'totk' })}</span>
         <img
           className={`mr-2 ${!isShow && 'rotate-180'}`}
-          src="/assets/image/arrow.svg"
+          src={image.arrow}
           alt="arrow" />
       </div>
 
@@ -61,7 +68,7 @@ function CategoryGroup(props: {
             }}>
             <img
               className="h-[28px] w-[28px]"
-              src={`/assets/icons/${item.icon}`}
+              src={getIcon(item.icon)}
               alt="icon" />
             <span
               className={`${

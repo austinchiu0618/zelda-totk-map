@@ -1,6 +1,8 @@
 import { Dropdown, ToggleSwitch, Flowbite } from 'flowbite-react'
 import type { CustomFlowbiteTheme } from 'flowbite-react'
 
+import image from '@/constants/image'
+
 const customTheme: CustomFlowbiteTheme = { toggleSwitch: { toggle: {
   base: 'toggle-bg h-6 w-11 rounded-full border'
 } } }
@@ -34,7 +36,7 @@ export default function Navbar() {
       <div className="title flex items-center space-x-4 text-xl font-semibold text-yellow-light ">
         <img
           className="w-12"
-          src="/assets/image/zelda.png"
+          src={image.zelda}
           alt="zelda" />
         <span>{t('Zelda', { ns: 'common' })}</span>
         <span>{t('Tears of the Kingdom', { ns: 'common' })}</span>
@@ -50,7 +52,7 @@ export default function Navbar() {
               <div>
                 <img
                   className="h-6 cursor-pointer"
-                  src="/assets/image/tool.svg"
+                  src={image.tool}
                   alt="" />
               </div>
             )}>
@@ -84,7 +86,7 @@ export default function Navbar() {
               <div className="w-[120px] flex items-center space-x-2 cursor-pointer">
                 <img
                   className="h-6"
-                  src="/assets/image/language.svg"
+                  src={image.language}
                   alt="language" />
                 <span>{languageItems[i18n.language].name}</span>
               </div>
